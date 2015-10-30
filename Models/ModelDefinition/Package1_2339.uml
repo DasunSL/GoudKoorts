@@ -116,8 +116,8 @@
             isAbstract="false">
             <classMoniker
               Id="a1a4db22-d55c-4aa2-b5ed-408caf3fa3be"
-              LastKnownName="Game"
-              LastKnownLocation="GoudKoorts.uml" />
+              LastKnownName="MainController"
+              LastKnownLocation="Package1_2339.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -274,8 +274,8 @@
             isAbstract="false">
             <classMoniker
               Id="a1a4db22-d55c-4aa2-b5ed-408caf3fa3be"
-              LastKnownName="Game"
-              LastKnownLocation="GoudKoorts.uml" />
+              LastKnownName="MainController"
+              LastKnownLocation="Package1_2339.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -367,8 +367,8 @@
             isAbstract="false">
             <classMoniker
               Id="a1a4db22-d55c-4aa2-b5ed-408caf3fa3be"
-              LastKnownName="Game"
-              LastKnownLocation="GoudKoorts.uml" />
+              LastKnownName="MainController"
+              LastKnownLocation="Package1_2339.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -398,6 +398,86 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="15ab9b4a-cdb5-4c27-a109-ff283e52cc36"
+            name="InputController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6b02b64f-1079-48e6-8263-e3a5b3d16d8a"
+                name="create"
+                profile="StandardProfileL2" />
+              <stereotypeInstance
+                Id="12d75498-136f-4f76-834b-8b4c9b98ad66"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbf98c95-d083-43c4-ba48-060faf5735d5">
+                    <propertyInstance
+                      Id="28dd3531-fde6-4bd6-8e0e-7457797d9c37"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a823f261-cf91-45ef-8dee-939cb44d153c">
+                    <propertyInstance
+                      Id="1232b748-7a19-4a3e-a3b9-aa80b6692423"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9554b7c5-bfb1-4b7e-81e6-1527348ee77f">
+                    <propertyInstance
+                      Id="f2412d2c-f5a5-4a7c-9c04-32c87867678f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08b490d2-e78f-456a-a8cf-7079c1273233">
+                    <propertyInstance
+                      Id="e3ac719e-3571-47fd-9521-4098834f6117"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3adc30fa-b3a7-4c78-a12c-0003fe555ff4">
+                    <propertyInstance
+                      Id="f68e670f-dc58-40d3-b881-a827c564209d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a48cc988-3e34-4f66-bbd5-954de44e85c9">
+                    <propertyInstance
+                      Id="ee052df9-d6c0-4e8f-a562-f204763050f9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ee8f3031-6f5d-478d-8fea-1e068bf156ab"
+                  name="mainController"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a1a4db22-d55c-4aa2-b5ed-408caf3fa3be"
+                      LastKnownName="MainController"
+                      LastKnownLocation="Package1_2339.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -512,8 +592,8 @@
             isAbstract="false">
             <classMoniker
               Id="a1a4db22-d55c-4aa2-b5ed-408caf3fa3be"
-              LastKnownName="Game"
-              LastKnownLocation="GoudKoorts.uml" />
+              LastKnownName="MainController"
+              LastKnownLocation="Package1_2339.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -543,6 +623,316 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a1a4db22-d55c-4aa2-b5ed-408caf3fa3be"
+        name="MainController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1a650262-547a-4bf2-9387-ee16e5c3a126"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6dd4a969-0ca3-47cb-8519-b1dd95eb8727">
+                <propertyInstance
+                  Id="10cd0d8c-68f2-4eef-a486-1991081a0d8d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f4430a19-b67f-470c-bf0b-2bf78456be4c">
+                <propertyInstance
+                  Id="68f3ccf9-0191-41d3-8d03-9b5603a27a78"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="46487659-877a-4a8b-9ca2-c4514816db5d">
+                <propertyInstance
+                  Id="49204474-f9af-4f65-9949-139a8152b9db"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fe81b463-d88b-438d-a233-7b24947a5ed2">
+                <propertyInstance
+                  Id="085ac4ab-ff62-45bc-83e9-e90a063b03f8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="49457ee6-2283-48fe-b803-e8f7b522ff7d">
+                <propertyInstance
+                  Id="b7e5d8a6-ee2d-4167-bbb9-b26a0d3a0421"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="154f37e2-90a8-45f0-b350-426a7cf8a0e0"
+            isDerived="false"
+            sourceEndRoleName="game"
+            targetEndRoleName="view"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="648b9e87-8feb-4f72-9387-ec67f83e3fad"
+              LastKnownName="View"
+              LastKnownLocation="Package_2339.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="25cb546e-72be-4241-bfa3-eae9be332c1d"
+                  name="game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="996ce68f-2c5e-4f8e-b6bc-bd582e7ea02f"
+                  name="view"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f762a3d3-e9be-4520-81cf-159d0d80a961"
+            isDerived="false"
+            sourceEndRoleName="Game"
+            targetEndRoleName="mapController"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e6f9d755-28b5-4fa7-9a16-d5fb54ac7b1c"
+              LastKnownName="MapController"
+              LastKnownLocation="Package1_2339.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5271a9d3-9fe6-4bca-ae54-e31e7c3586d9"
+                  name="Game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1cb6f134-f99f-4f41-a3bb-9176064d6c9c"
+                  name="mapController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b7b5ecd5-f6ea-4946-8731-5a23b26ad735"
+            isDerived="false"
+            sourceEndRoleName="game"
+            targetEndRoleName="inputController"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2e0918e0-4e16-4cc3-a718-805d96f86816"
+              LastKnownName="InputController"
+              LastKnownLocation="Package1_2339.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d6a47c39-70cd-4c79-bac6-a7de02585698"
+                  name="game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ca6df71-f5da-44b1-ab7c-862d2ec7deec"
+                  name="inputController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="183823db-f7b2-4267-b108-f625df3df0f6"
+            isDerived="false"
+            sourceEndRoleName="game"
+            targetEndRoleName="cartsController"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="24cdf1f8-f772-40ac-baac-d84905477a15"
+              LastKnownName="CartsController"
+              LastKnownLocation="Package1_2339.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="28eba389-d2de-4f25-99a6-9aed3f1afd99"
+                  name="game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6887aa68-b6b1-47b6-bf35-b65583976061"
+                  name="cartsController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d5081056-2bbe-47cd-a630-17d8d8e983ae"
+            isDerived="false"
+            sourceEndRoleName="game"
+            targetEndRoleName="shipsController"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="728df7c0-e955-4454-b537-8a2bff83251a"
+              LastKnownName="ShipsController"
+              LastKnownLocation="Package1_2339.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9af76ce7-f677-4750-8644-b53e519a3236"
+                  name="game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="255e5a7e-22d7-4a4c-a42a-2b19c8994f1c"
+                  name="shipsController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="9770a274-185a-4b29-b6bf-b4e071d120d5"
+            name="Start"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9684fb2e-324f-4023-81b2-5d4b6e12e126"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0969cecc-d3af-472b-9e35-2fd306a8f829">
+                    <propertyInstance
+                      Id="d4c82d4f-532d-47a5-93be-c6cf62efaf00"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9553925-ae34-4ffd-b5a3-b8405c998d44">
+                    <propertyInstance
+                      Id="ea33672c-e218-4e41-9ac4-cf41875ea610"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83fb007d-74fe-4266-a503-9f6dd0edb17d">
+                    <propertyInstance
+                      Id="4a6a3246-e17f-42f0-ac78-6a83fd21e461"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eef05ee7-561f-434d-8113-5ac68daf6520">
+                    <propertyInstance
+                      Id="9d8ffcae-47d2-474b-bbc3-9157c33b4951"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3974606-1fdd-471d-91b8-9b498b5f380b">
+                    <propertyInstance
+                      Id="0cb3a5f8-0324-48b2-af03-32aaf7bdb370"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97bd38be-c135-43d6-8b97-132223d2c90c">
+                    <propertyInstance
+                      Id="6b89f44c-cc36-43a3-a183-25812da8808d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>

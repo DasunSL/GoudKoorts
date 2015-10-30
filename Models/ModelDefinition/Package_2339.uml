@@ -64,8 +64,8 @@
             isAbstract="false">
             <classMoniker
               Id="a1a4db22-d55c-4aa2-b5ed-408caf3fa3be"
-              LastKnownName="Game"
-              LastKnownLocation="GoudKoorts.uml" />
+              LastKnownName="MainController"
+              LastKnownLocation="Package1_2339.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd

@@ -9,21 +9,41 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using view;
 
-public class Game
+public class MainController
 {
-	public virtual MainController MainController
+	public virtual View view
+	{
+		get;
+		set;
+	}
+
+	public virtual MapController mapController
+	{
+		get;
+		set;
+	}
+
+	public virtual InputController inputController
+	{
+		get;
+		set;
+	}
+
+	public virtual CartsController cartsController
+	{
+		get;
+		set;
+	}
+
+	public virtual ShipsController shipsController
 	{
 		get;
 		set;
 	}
 
 	public virtual void Start()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void Stop()
 	{
 		throw new System.NotImplementedException();
 	}

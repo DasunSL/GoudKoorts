@@ -20,7 +20,7 @@ namespace controller
 			set;
 		}
 
-		public virtual Game game
+		public virtual MainController game
 		{
 			get;
 			set;

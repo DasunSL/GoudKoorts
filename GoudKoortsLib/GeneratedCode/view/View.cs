@@ -6,6 +6,7 @@
 //------------------------------------------------------------------------------
 namespace view
 {
+	using controller;
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
@@ -13,7 +14,7 @@ namespace view
 
 	public class View
 	{
-		public virtual Game game
+		public virtual MainController game
 		{
 			get;
 			set;

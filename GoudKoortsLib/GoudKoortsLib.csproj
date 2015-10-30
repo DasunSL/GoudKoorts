@@ -41,9 +41,11 @@
   <ItemGroup>
     <Compile Include="GeneratedCode\controller\CartsController.cs" />
     <Compile Include="GeneratedCode\controller\InputController.cs" />
+    <Compile Include="GeneratedCode\controller\MainController.cs" />
     <Compile Include="GeneratedCode\controller\MapController.cs" />
     <Compile Include="GeneratedCode\controller\ShipsController.cs" />
     <Compile Include="GeneratedCode\Game.cs" />
+    <Compile Include="GeneratedCode\MainController.cs" />
     <Compile Include="GeneratedCode\model\Cart.cs" />
     <Compile Include="GeneratedCode\model\Dock.cs" />
     <Compile Include="GeneratedCode\model\Fairway.cs" />
