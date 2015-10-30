@@ -4,12 +4,15 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public abstract class LandVisitor : Visitor
+namespace model
 {
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
+
+	public abstract class WaterVisitor : Visitor
+	{
+	}
 }
 

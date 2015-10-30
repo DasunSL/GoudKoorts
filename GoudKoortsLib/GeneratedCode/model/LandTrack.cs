@@ -4,18 +4,20 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public class Cart : LandVisitor
+namespace model
 {
-	private bool hasCargo
-	{
-		get;
-		set;
-	}
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
+	public abstract class LandTrack : Track
+	{
+		public override char ToChar()
+		{
+			throw new System.NotImplementedException();
+		}
+
+	}
 }
 

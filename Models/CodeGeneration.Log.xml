@@ -6,85 +6,88 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2015-10-30T23:34:26" Importance="High" Text="Code generation or text transformation started." />
-  <Message Timestamp="2015-10-30T23:34:26" Importance="Diagnostic" Text="Name = ClassTemplate" />
-  <Message Timestamp="2015-10-30T23:34:26" Importance="Diagnostic" Text="Overwrite = True" />
-  <Message Timestamp="2015-10-30T23:34:26" Importance="Diagnostic" Text="ProjectPath = ..\GoudKoortsLib\GoudKoortsLib.csproj" />
-  <Message Timestamp="2015-10-30T23:34:26" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2015-10-30T23:34:26" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2015-10-30T23:34:26" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2015-10-30T23:34:26" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2015-10-30T23:34:26" Importance="Medium" Text="GoudKoorts's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'GoudKoorts::Cart' -  (Class), 'GoudKoorts::Warehouse' -  (Class), 'GoudKoorts::Ship' -  (Class), 'GoudKoorts::Switch' -  (Class), 'GoudKoorts::TrainRails' -  (Class), 'GoudKoorts::Parking' -  (Class), 'GoudKoorts::Visitor' -  (Class), 'GoudKoorts::Field' -  (Class), 'GoudKoorts::Dock' -  (Class), 'GoudKoorts::Fairway' -  (Class), 'GoudKoorts::WaterVisitor' -  (Class), 'GoudKoorts::LandVisitor' -  (Class), 'GoudKoorts::LandTrack' -  (Class), 'GoudKoorts::WaterTrack' -  (Class), 'GoudKoorts::Track' -  (Class), 'GoudKoorts::Water' -  (Class), 'GoudKoorts::Game' -  (Class), 'GoudKoorts::View' -  (Class), 'GoudKoorts::MapController' -  (Class), 'GoudKoorts::CartsController' -  (Class), 'GoudKoorts::ShipsController' -  (Class), 'GoudKoorts::InputController' -  (Class) " />
-  <Message Timestamp="2015-10-30T23:34:27" Importance="Medium" Text="'GoudKoorts::Cart' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\Cart.cs" />
-  <Message Timestamp="2015-10-30T23:34:27" Importance="Medium" Text="'GoudKoorts::Warehouse' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\Warehouse.cs" />
-  <Message Timestamp="2015-10-30T23:34:27" Importance="Medium" Text="'GoudKoorts::Ship' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\Ship.cs" />
-  <Message Timestamp="2015-10-30T23:34:27" Importance="Medium" Text="'GoudKoorts::Switch' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\Switch.cs" />
-  <Message Timestamp="2015-10-30T23:34:27" Importance="Medium" Text="'GoudKoorts::TrainRails' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\TrainRails.cs" />
-  <Message Timestamp="2015-10-30T23:34:27" Importance="Medium" Text="'GoudKoorts::Parking' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\Parking.cs" />
-  <Message Timestamp="2015-10-30T23:34:27" Importance="Medium" Text="'GoudKoorts::Visitor' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\Visitor.cs" />
-  <Message Timestamp="2015-10-30T23:34:27" Importance="Medium" Text="'GoudKoorts::Field' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\Field.cs" />
-  <Message Timestamp="2015-10-30T23:34:28" Importance="Medium" Text="'GoudKoorts::Dock' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\Dock.cs" />
-  <Message Timestamp="2015-10-30T23:34:28" Importance="Medium" Text="'GoudKoorts::Fairway' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\Fairway.cs" />
-  <Message Timestamp="2015-10-30T23:34:28" Importance="Medium" Text="'GoudKoorts::WaterVisitor' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\WaterVisitor.cs" />
-  <Message Timestamp="2015-10-30T23:34:28" Importance="Medium" Text="'GoudKoorts::LandVisitor' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\LandVisitor.cs" />
-  <Message Timestamp="2015-10-30T23:34:28" Importance="Medium" Text="'GoudKoorts::LandTrack' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\LandTrack.cs" />
-  <Message Timestamp="2015-10-30T23:34:28" Importance="Medium" Text="'GoudKoorts::WaterTrack' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\WaterTrack.cs" />
-  <Message Timestamp="2015-10-30T23:34:28" Importance="Medium" Text="'GoudKoorts::Track' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\Track.cs" />
-  <Message Timestamp="2015-10-30T23:34:28" Importance="Medium" Text="'GoudKoorts::Water' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\Water.cs" />
-  <Message Timestamp="2015-10-30T23:34:28" Importance="Medium" Text="'GoudKoorts::Game' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\Game.cs" />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Medium" Text="'GoudKoorts::View' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\View.cs" />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Medium" Text="'GoudKoorts::MapController' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\MapController.cs" />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Medium" Text="'GoudKoorts::CartsController' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\CartsController.cs" />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Medium" Text="'GoudKoorts::ShipsController' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\ShipsController.cs" />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Medium" Text="'GoudKoorts::InputController' -  (Class) : success (file replaced) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\InputController.cs" />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="Name = StructTemplate" />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="Overwrite = True" />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="ProjectPath = ..\GoudKoortsLib\GoudKoortsLib.csproj" />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Medium" Text="GoudKoorts's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'GoudKoorts::Cart' -  (Class), 'GoudKoorts::Warehouse' -  (Class), 'GoudKoorts::Ship' -  (Class), 'GoudKoorts::Switch' -  (Class), 'GoudKoorts::TrainRails' -  (Class), 'GoudKoorts::Parking' -  (Class), 'GoudKoorts::Visitor' -  (Class), 'GoudKoorts::Field' -  (Class), 'GoudKoorts::Dock' -  (Class), 'GoudKoorts::Fairway' -  (Class), 'GoudKoorts::WaterVisitor' -  (Class), 'GoudKoorts::LandVisitor' -  (Class), 'GoudKoorts::LandTrack' -  (Class), 'GoudKoorts::WaterTrack' -  (Class), 'GoudKoorts::Track' -  (Class), 'GoudKoorts::Water' -  (Class), 'GoudKoorts::Game' -  (Class), 'GoudKoorts::View' -  (Class), 'GoudKoorts::MapController' -  (Class), 'GoudKoorts::CartsController' -  (Class), 'GoudKoorts::ShipsController' -  (Class), 'GoudKoorts::InputController' -  (Class) " />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::Cart' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::Warehouse' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::Ship' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::Switch' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::TrainRails' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::Parking' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::Visitor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::Field' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::Dock' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::Fairway' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::WaterVisitor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::LandVisitor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::LandTrack' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:29" Importance="Diagnostic" Text="'GoudKoorts::WaterTrack' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::Track' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::Water' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::Game' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::View' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::MapController' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::CartsController' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::ShipsController' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::InputController' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="The selection included 18 elements which were not bound to a template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts' -  (ModelStoreModel): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'char' -  (UndefinedType): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
-  <Message Timestamp="2015-10-30T23:34:30" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+  <Message Timestamp="2015-10-30T23:47:21" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2015-10-30T23:47:21" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2015-10-30T23:47:21" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-10-30T23:47:21" Importance="Diagnostic" Text="ProjectPath = ..\GoudKoortsLib\GoudKoortsLib.csproj" />
+  <Message Timestamp="2015-10-30T23:47:21" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-10-30T23:47:21" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-10-30T23:47:21" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-10-30T23:47:21" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-10-30T23:47:21" Importance="Medium" Text="GoudKoorts's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'GoudKoorts::Game' -  (Class), 'GoudKoorts::model::Dock' -  (Class), 'GoudKoorts::model::Field' -  (Class), 'GoudKoorts::model::Track' -  (Class), 'GoudKoorts::model::TrainRails' -  (Class), 'GoudKoorts::model::WaterVisitor' -  (Class), 'GoudKoorts::model::WaterTrack' -  (Class), 'GoudKoorts::model::Water' -  (Class), 'GoudKoorts::model::Warehouse' -  (Class), 'GoudKoorts::model::Visitor' -  (Class), 'GoudKoorts::model::Switch' -  (Class), 'GoudKoorts::model::Ship' -  (Class), 'GoudKoorts::model::Parking' -  (Class), 'GoudKoorts::model::LandVisitor' -  (Class), 'GoudKoorts::model::LandTrack' -  (Class), 'GoudKoorts::model::Fairway' -  (Class), 'GoudKoorts::model::Cart' -  (Class), 'GoudKoorts::view::View' -  (Class), 'GoudKoorts::controller::ShipsController' -  (Class), 'GoudKoorts::controller::MapController' -  (Class), 'GoudKoorts::controller::InputController' -  (Class), 'GoudKoorts::controller::CartsController' -  (Class) " />
+  <Message Timestamp="2015-10-30T23:47:21" Importance="Medium" Text="'GoudKoorts::Game' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\Game.cs" />
+  <Message Timestamp="2015-10-30T23:47:22" Importance="Medium" Text="'GoudKoorts::model::Dock' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\Dock.cs" />
+  <Message Timestamp="2015-10-30T23:47:22" Importance="Medium" Text="'GoudKoorts::model::Field' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\Field.cs" />
+  <Message Timestamp="2015-10-30T23:47:22" Importance="Medium" Text="'GoudKoorts::model::Track' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\Track.cs" />
+  <Message Timestamp="2015-10-30T23:47:22" Importance="Medium" Text="'GoudKoorts::model::TrainRails' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\TrainRails.cs" />
+  <Message Timestamp="2015-10-30T23:47:22" Importance="Medium" Text="'GoudKoorts::model::WaterVisitor' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\WaterVisitor.cs" />
+  <Message Timestamp="2015-10-30T23:47:22" Importance="Medium" Text="'GoudKoorts::model::WaterTrack' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\WaterTrack.cs" />
+  <Message Timestamp="2015-10-30T23:47:22" Importance="Medium" Text="'GoudKoorts::model::Water' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\Water.cs" />
+  <Message Timestamp="2015-10-30T23:47:22" Importance="Medium" Text="'GoudKoorts::model::Warehouse' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\Warehouse.cs" />
+  <Message Timestamp="2015-10-30T23:47:23" Importance="Medium" Text="'GoudKoorts::model::Visitor' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\Visitor.cs" />
+  <Message Timestamp="2015-10-30T23:47:23" Importance="Medium" Text="'GoudKoorts::model::Switch' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\Switch.cs" />
+  <Message Timestamp="2015-10-30T23:47:23" Importance="Medium" Text="'GoudKoorts::model::Ship' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\Ship.cs" />
+  <Message Timestamp="2015-10-30T23:47:23" Importance="Medium" Text="'GoudKoorts::model::Parking' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\Parking.cs" />
+  <Message Timestamp="2015-10-30T23:47:23" Importance="Medium" Text="'GoudKoorts::model::LandVisitor' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\LandVisitor.cs" />
+  <Message Timestamp="2015-10-30T23:47:23" Importance="Medium" Text="'GoudKoorts::model::LandTrack' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\LandTrack.cs" />
+  <Message Timestamp="2015-10-30T23:47:23" Importance="Medium" Text="'GoudKoorts::model::Fairway' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\Fairway.cs" />
+  <Message Timestamp="2015-10-30T23:47:23" Importance="Medium" Text="'GoudKoorts::model::Cart' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\model\Cart.cs" />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Medium" Text="'GoudKoorts::view::View' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\view\View.cs" />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Medium" Text="'GoudKoorts::controller::ShipsController' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\controller\ShipsController.cs" />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Medium" Text="'GoudKoorts::controller::MapController' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\controller\MapController.cs" />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Medium" Text="'GoudKoorts::controller::InputController' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\controller\InputController.cs" />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Medium" Text="'GoudKoorts::controller::CartsController' -  (Class) : success (file created) - D:\Projects\GoudKoorts\GoudKoortsLib\GeneratedCode\controller\CartsController.cs" />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="ProjectPath = ..\GoudKoortsLib\GoudKoortsLib.csproj" />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Medium" Text="GoudKoorts's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'GoudKoorts::Game' -  (Class), 'GoudKoorts::model::Dock' -  (Class), 'GoudKoorts::model::Field' -  (Class), 'GoudKoorts::model::Track' -  (Class), 'GoudKoorts::model::TrainRails' -  (Class), 'GoudKoorts::model::WaterVisitor' -  (Class), 'GoudKoorts::model::WaterTrack' -  (Class), 'GoudKoorts::model::Water' -  (Class), 'GoudKoorts::model::Warehouse' -  (Class), 'GoudKoorts::model::Visitor' -  (Class), 'GoudKoorts::model::Switch' -  (Class), 'GoudKoorts::model::Ship' -  (Class), 'GoudKoorts::model::Parking' -  (Class), 'GoudKoorts::model::LandVisitor' -  (Class), 'GoudKoorts::model::LandTrack' -  (Class), 'GoudKoorts::model::Fairway' -  (Class), 'GoudKoorts::model::Cart' -  (Class), 'GoudKoorts::view::View' -  (Class), 'GoudKoorts::controller::ShipsController' -  (Class), 'GoudKoorts::controller::MapController' -  (Class), 'GoudKoorts::controller::InputController' -  (Class), 'GoudKoorts::controller::CartsController' -  (Class) " />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="'GoudKoorts::Game' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="'GoudKoorts::model::Dock' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="'GoudKoorts::model::Field' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="'GoudKoorts::model::Track' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="'GoudKoorts::model::TrainRails' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="'GoudKoorts::model::WaterVisitor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="'GoudKoorts::model::WaterTrack' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="'GoudKoorts::model::Water' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:24" Importance="Diagnostic" Text="'GoudKoorts::model::Warehouse' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::model::Visitor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::model::Switch' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::model::Ship' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::model::Parking' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::model::LandVisitor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::model::LandTrack' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::model::Fairway' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::model::Cart' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::view::View' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::controller::ShipsController' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::controller::MapController' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::controller::InputController' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::controller::CartsController' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="The selection included 21 elements which were not bound to a template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts' -  (ModelStoreModel): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'char' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::model' -  (Package): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::model::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::model::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::model::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::view' -  (Package): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::view::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::controller' -  (Package): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::controller::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::controller::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::controller::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::controller::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::controller::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::controller::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::controller::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="Diagnostic" Text="'GoudKoorts::' -  (Association): no bound template." />
+  <Message Timestamp="2015-10-30T23:47:25" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
 </Log>

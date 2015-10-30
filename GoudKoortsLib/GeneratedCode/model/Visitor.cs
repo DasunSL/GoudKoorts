@@ -4,24 +4,26 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public class ShipsController
+namespace model
 {
-	public virtual IEnumerable<Ship> ships
-	{
-		get;
-		set;
-	}
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
-	public virtual Game game
+	public abstract class Visitor
 	{
-		get;
-		set;
-	}
+		public virtual Track track
+		{
+			get;
+			set;
+		}
 
+		public virtual void Move()
+		{
+			throw new System.NotImplementedException();
+		}
+
+	}
 }
 

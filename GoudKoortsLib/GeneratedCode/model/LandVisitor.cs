@@ -4,23 +4,15 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public abstract class Visitor
+namespace model
 {
-	public virtual Track track
-	{
-		get;
-		set;
-	}
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
-	public virtual void Move()
+	public abstract class LandVisitor : Visitor
 	{
-		throw new System.NotImplementedException();
 	}
-
 }
 

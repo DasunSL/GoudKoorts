@@ -4,17 +4,25 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public abstract class LandTrack : Track
+namespace model
 {
-	public override char ToChar()
-	{
-		throw new System.NotImplementedException();
-	}
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
+	public class Fairway : WaterTrack
+	{
+		public virtual bool HasDock()
+		{
+			throw new System.NotImplementedException();
+		}
+
+		public override char ToChar()
+		{
+			throw new System.NotImplementedException();
+		}
+
+	}
 }
 

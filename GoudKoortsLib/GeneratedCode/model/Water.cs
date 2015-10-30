@@ -4,17 +4,20 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public abstract class Field
+namespace model
 {
-	public virtual char ToChar()
-	{
-		throw new System.NotImplementedException();
-	}
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
+	public class Water : Field
+	{
+		public override char ToChar()
+		{
+			throw new System.NotImplementedException();
+		}
+
+	}
 }
 

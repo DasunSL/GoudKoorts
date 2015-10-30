@@ -4,17 +4,21 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public class Dock : TrainRails
+namespace controller
 {
-	public override char ToChar()
-	{
-		throw new System.NotImplementedException();
-	}
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
+	public class InputController
+	{
+		public virtual Game game
+		{
+			get;
+			set;
+		}
+
+	}
 }
 

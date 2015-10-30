@@ -4,22 +4,26 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public class Fairway : WaterTrack
+namespace model
 {
-	public virtual bool HasDock()
-	{
-		throw new System.NotImplementedException();
-	}
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
-	public override char ToChar()
+	public class Switch : TrainRails
 	{
-		throw new System.NotImplementedException();
-	}
+		public virtual bool direction
+		{
+			get;
+			set;
+		}
 
+		public override char ToChar()
+		{
+			throw new System.NotImplementedException();
+		}
+
+	}
 }
 

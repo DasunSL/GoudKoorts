@@ -4,29 +4,21 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public class Ship : WaterVisitor
+namespace view
 {
-	private int cargo
-	{
-		get;
-		set;
-	}
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
-	public static int MAX_CARGO
+	public class View
 	{
-		get;
-		private set;
-	}
+		public virtual Game game
+		{
+			get;
+			set;
+		}
 
-	public virtual bool IsDocked()
-	{
-		throw new System.NotImplementedException();
 	}
-
 }
 

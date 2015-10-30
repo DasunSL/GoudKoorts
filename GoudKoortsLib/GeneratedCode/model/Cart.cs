@@ -4,18 +4,21 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public class InputController
+namespace model
 {
-	public virtual Game game
-	{
-		get;
-		set;
-	}
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
+	public class Cart : LandVisitor
+	{
+		private bool hasCargo
+		{
+			get;
+			set;
+		}
+
+	}
 }
 

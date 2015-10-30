@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a6452c4d-396c-4c77-9be4-b281ff909216"
+  name="view" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="648b9e87-8feb-4f72-9387-ec67f83e3fad"
+        name="View"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="721f6a50-487f-4070-8593-6a83898fe3cd"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cf38f5f0-61cc-4267-8cb8-0112f313faeb">
+                <propertyInstance
+                  Id="50dab433-dac6-491a-901c-2032ebc04076"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="51e5a5c2-020f-453f-8c8b-408b217e14c1">
+                <propertyInstance
+                  Id="7c6cbf93-4895-4f57-adc2-b7e62195f1b5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="29962b5e-e0b6-4ece-b885-4dddd2951ba8">
+                <propertyInstance
+                  Id="40616f25-1959-4579-a5ac-668705bae8b2"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e3b28b88-6d17-42d6-8ad9-4ef795636e9b">
+                <propertyInstance
+                  Id="2b085a06-73ad-4d0b-95d1-b070868cea01"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="08cf01ad-bbc1-4269-8373-182a578c2c5a">
+                <propertyInstance
+                  Id="77782d55-abc6-4876-ade8-796f78c98019"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="e053b74f-a682-4401-8584-7babbf5ee7ae"
+            isDerived="false"
+            sourceEndRoleName="view"
+            targetEndRoleName="game"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a1a4db22-d55c-4aa2-b5ed-408caf3fa3be"
+              LastKnownName="Game"
+              LastKnownLocation="GoudKoorts.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8bfcd66c-4e6f-41fc-a003-4232c83776f6"
+                  name="view"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ce952c8d-baba-4963-b456-2b4262c07980"
+                  name="game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

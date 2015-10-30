@@ -4,24 +4,20 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public class CartsController
+namespace model
 {
-	public virtual IEnumerable<Cart> carts
-	{
-		get;
-		set;
-	}
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
-	public virtual Game game
+	public class Dock : TrainRails
 	{
-		get;
-		set;
-	}
+		public override char ToChar()
+		{
+			throw new System.NotImplementedException();
+		}
 
+	}
 }
 

@@ -4,18 +4,20 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public class View
+namespace model
 {
-	public virtual Game game
-	{
-		get;
-		set;
-	}
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
+	public abstract class Field
+	{
+		public virtual char ToChar()
+		{
+			throw new System.NotImplementedException();
+		}
+
+	}
 }
 

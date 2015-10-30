@@ -4,17 +4,28 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public class Water : Field
+namespace controller
 {
-	public override char ToChar()
-	{
-		throw new System.NotImplementedException();
-	}
+	using model;
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
+	public class MapController
+	{
+		public virtual IEnumerable<Field> fields
+		{
+			get;
+			set;
+		}
+
+		public virtual Game Game
+		{
+			get;
+			set;
+		}
+
+	}
 }
 

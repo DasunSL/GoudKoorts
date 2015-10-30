@@ -4,23 +4,28 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public class Switch : TrainRails
+namespace controller
 {
-	public virtual bool direction
-	{
-		get;
-		set;
-	}
+	using model;
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
-	public override char ToChar()
+	public class ShipsController
 	{
-		throw new System.NotImplementedException();
-	}
+		public virtual IEnumerable<Ship> ships
+		{
+			get;
+			set;
+		}
 
+		public virtual Game game
+		{
+			get;
+			set;
+		}
+
+	}
 }
 
