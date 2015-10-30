@@ -11,5 +11,10 @@ using System.Text;
 
 public abstract class WaterTrack : Track
 {
+	public override char ToChar()
+	{
+		throw new System.NotImplementedException();
+	}
+
 }
 

@@ -9,14 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Water : WaterTrack
+public class Water : Field
 {
-	public virtual bool HasDock()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual char ToChar()
+	public override char ToChar()
 	{
 		throw new System.NotImplementedException();
 	}

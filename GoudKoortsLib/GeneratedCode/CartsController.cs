@@ -9,17 +9,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public abstract class Visitor
+public class CartsController
 {
-	public virtual Track track
+	public virtual IEnumerable<Cart> carts
 	{
 		get;
 		set;
 	}
 
-	public virtual void Move()
+	public virtual Game game
 	{
-		throw new System.NotImplementedException();
+		get;
+		set;
 	}
 
 }

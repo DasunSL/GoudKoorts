@@ -9,15 +9,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public abstract class Visitor
+public class Fairway : WaterTrack
 {
-	public virtual Track track
+	public virtual bool HasDock()
 	{
-		get;
-		set;
+		throw new System.NotImplementedException();
 	}
 
-	public virtual void Move()
+	public override char ToChar()
 	{
 		throw new System.NotImplementedException();
 	}

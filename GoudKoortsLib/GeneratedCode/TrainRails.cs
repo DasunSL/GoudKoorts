@@ -11,7 +11,7 @@ using System.Text;
 
 public class TrainRails : LandTrack
 {
-	public virtual char ToChar()
+	public override char ToChar()
 	{
 		throw new System.NotImplementedException();
 	}

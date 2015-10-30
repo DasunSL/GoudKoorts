@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Warehouse : LandField
+public class Warehouse : Field
 {
 	public virtual string name
 	{
@@ -22,7 +22,7 @@ public class Warehouse : LandField
 		throw new System.NotImplementedException();
 	}
 
-	public virtual char ToChar()
+	public override char ToChar()
 	{
 		throw new System.NotImplementedException();
 	}

@@ -17,5 +17,16 @@ public abstract class Track : Field
 		set;
 	}
 
+	public virtual Visitor visitor
+	{
+		get;
+		set;
+	}
+
+	public override char ToChar()
+	{
+		throw new System.NotImplementedException();
+	}
+
 }
 

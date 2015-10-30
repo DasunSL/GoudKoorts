@@ -9,17 +9,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public abstract class Visitor
+public class View
 {
-	public virtual Track track
+	public virtual Game game
 	{
 		get;
 		set;
-	}
-
-	public virtual void Move()
-	{
-		throw new System.NotImplementedException();
 	}
 
 }

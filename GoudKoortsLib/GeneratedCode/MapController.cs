@@ -9,17 +9,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public abstract class Visitor
+public class MapController
 {
-	public virtual Track track
+	public virtual IEnumerable<Field> fields
 	{
 		get;
 		set;
 	}
 
-	public virtual void Move()
+	public virtual Game Game
 	{
-		throw new System.NotImplementedException();
+		get;
+		set;
 	}
 
 }

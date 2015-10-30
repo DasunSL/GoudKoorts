@@ -9,15 +9,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public abstract class Visitor
+public class Game
 {
-	public virtual Track track
+	public virtual View view
 	{
 		get;
 		set;
 	}
 
-	public virtual void Move()
+	public virtual MapController mapController
+	{
+		get;
+		set;
+	}
+
+	public virtual InputController inputController
+	{
+		get;
+		set;
+	}
+
+	public virtual CartsController cartsController
+	{
+		get;
+		set;
+	}
+
+	public virtual ShipsController shipsController
+	{
+		get;
+		set;
+	}
+
+	public virtual void Start()
 	{
 		throw new System.NotImplementedException();
 	}

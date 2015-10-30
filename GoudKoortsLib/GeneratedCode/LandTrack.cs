@@ -11,5 +11,10 @@ using System.Text;
 
 public abstract class LandTrack : Track
 {
+	public override char ToChar()
+	{
+		throw new System.NotImplementedException();
+	}
+
 }
 
