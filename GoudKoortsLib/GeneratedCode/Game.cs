@@ -20,12 +20,13 @@ public class Game
 
 	public virtual void Initialize()
 	{
-		throw new System.NotImplementedException();
+        mainController = new MainController();
+        mainController.Initialize();
 	}
 
 	public virtual void Terminate()
 	{
-		throw new System.NotImplementedException();
+        mainController = null;
 	}
 
 }

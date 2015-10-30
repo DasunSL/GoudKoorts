@@ -6,14 +6,19 @@
 //------------------------------------------------------------------------------
 namespace controller
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-	using view;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Timers;
+    using view;
 
 	public class MainController
 	{
+        private Timer intervalTimer;
+
+        private int interval = 5000; // Interval in milliseconds
+
 		public virtual View view
 		{
 			get;
@@ -44,19 +49,40 @@ namespace controller
 			set;
 		}
 
-        public MainController()
+        public virtual void Initialize()
         {
+            // Initialize the controllers.
             view = new View(this);
             mapController = new MapController(this);
             inputController = new InputController(this);
             cartsController = new CartsController(this);
             shipsController = new ShipsController(this);
+
+            // Render the start screen.
+            view.RenderStartScreen();
+
+            // Wait for any key to start the game.
+            Console.ReadKey();
+
+            // Start the game.
+            Start();
         }
 
 		public virtual void Start()
 		{
-            
+            // Start the interval timer.
+            intervalTimer = new Timer(interval);
+            intervalTimer.Elapsed += OnInterval;
+            intervalTimer.AutoReset = true;
+            intervalTimer.Enabled = true;
+
+            Console.ReadKey();
 		}
+
+        private void OnInterval(Object source, ElapsedEventArgs e)
+        {
+            
+        }
 
 	}
 }

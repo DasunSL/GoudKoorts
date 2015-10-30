@@ -22,8 +22,17 @@ namespace view
 
 		public View(MainController mainController)
 		{
+            this.mainController = new MainController();
 		}
 
+        public void RenderStartScreen()
+        {
+            // Clear the console.
+            Console.Clear();
+
+            // Write the start lines.
+            Console.WriteLine("Welcome to GoudKoorts! Press any key to start.");
+        }
 	}
 }
 
