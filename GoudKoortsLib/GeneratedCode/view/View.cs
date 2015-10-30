@@ -14,10 +14,14 @@ namespace view
 
 	public class View
 	{
-		public virtual MainController game
+		public virtual MainController mainController
 		{
 			get;
 			set;
+		}
+
+		public View(MainController mainController)
+		{
 		}
 
 	}

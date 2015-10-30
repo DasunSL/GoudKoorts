@@ -13,7 +13,7 @@ namespace controller
 
 	public class InputController
 	{
-		public virtual MainController game
+		public virtual MainController mainController
 		{
 			get;
 			set;

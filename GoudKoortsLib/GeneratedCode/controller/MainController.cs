@@ -44,9 +44,18 @@ namespace controller
 			set;
 		}
 
+        public MainController()
+        {
+            view = new View(this);
+            mapController = new MapController(this);
+            inputController = new InputController(this);
+            cartsController = new CartsController(this);
+            shipsController = new ShipsController(this);
+        }
+
 		public virtual void Start()
 		{
-			throw new System.NotImplementedException();
+            
 		}
 
 	}

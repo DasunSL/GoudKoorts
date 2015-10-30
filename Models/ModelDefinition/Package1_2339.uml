@@ -111,7 +111,7 @@
             Id="f957e760-6195-42ed-b111-6248ce082b56"
             isDerived="false"
             sourceEndRoleName="shipsController"
-            targetEndRoleName="game"
+            targetEndRoleName="mainController"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -135,7 +135,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="ee512e7f-4397-48d5-9799-5fa417c77b3a"
-                  name="game"
+                  name="mainController"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -147,6 +147,86 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="a2a54852-8578-48df-b785-5e26901712c2"
+            name="ShipsController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="88c1847e-20c2-4f02-84db-92dfdf292849"
+                name="create"
+                profile="StandardProfileL2" />
+              <stereotypeInstance
+                Id="e5b7d6a0-3644-4b9c-a4d9-68f78afe17f1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="243636f5-cee4-4660-b36e-fb5822822a8b">
+                    <propertyInstance
+                      Id="6a1bfc65-9d87-465c-8005-54d2e500b0ec"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7161d5b8-cabb-4c62-986e-768869710c54">
+                    <propertyInstance
+                      Id="a9a91be8-eb94-48f5-a3b7-780c96f45728"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f202c85e-5ca4-4ab2-b475-922cbe8594b7">
+                    <propertyInstance
+                      Id="3e74d145-f982-4e1d-96ae-4b9d284dc35c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d6c241e-faa7-4584-9b80-cc6784eb5b4a">
+                    <propertyInstance
+                      Id="af872c71-1f7f-44fc-9207-8f92b1f4156c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c2568e7-4b51-4a11-a011-e4a83dfb447d">
+                    <propertyInstance
+                      Id="1531c8cb-c2a5-4e5d-83b6-b76c850e2eb0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a8b955e-8f02-448c-8574-8b0a05eef453">
+                    <propertyInstance
+                      Id="db325b1d-0d74-4609-b220-808bfb577c76"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f9c97050-04d3-4c46-b2a4-606f6ae3d3ed"
+                  name="mainController"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a1a4db22-d55c-4aa2-b5ed-408caf3fa3be"
+                      LastKnownName="MainController"
+                      LastKnownLocation="Package1_2339.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -269,7 +349,7 @@
             Id="b4e22fa4-5b79-4124-9029-06e337557944"
             isDerived="false"
             sourceEndRoleName="mapController"
-            targetEndRoleName="Game"
+            targetEndRoleName="mainController"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -293,7 +373,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="6116052d-0db9-4405-9494-d5473ca55716"
-                  name="Game"
+                  name="mainController"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -305,6 +385,86 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="c45e580d-5b98-4062-a5c5-6adf85e4c30a"
+            name="MapController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dd7b2c7d-112e-4769-bc4f-189a30eb9dd1"
+                name="create"
+                profile="StandardProfileL2" />
+              <stereotypeInstance
+                Id="6fa8e34d-db46-472f-b981-b4b35d978f50"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9610526c-876a-4bdc-8c6f-c0fcb597a88e">
+                    <propertyInstance
+                      Id="6c29b4df-2c68-4e7c-9838-3f1a612b1629"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b22fd5de-4fc0-4801-bb6f-f5ce1ee5bb76">
+                    <propertyInstance
+                      Id="b0a468f0-e870-47d6-8887-cee8a8e527fb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7600d495-09d3-4c9a-98f1-7e29e8c383dc">
+                    <propertyInstance
+                      Id="2f6afb3c-4976-4a36-95fb-c863117e8701"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d961037f-77e6-43ce-b115-8a7e6feed88e">
+                    <propertyInstance
+                      Id="8fea77b4-80d0-47c2-b9d3-f7c242945a77"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f53b5f21-806f-44bf-8557-23f94bcecfde">
+                    <propertyInstance
+                      Id="9e338f5f-bb98-4d8d-b943-016cd0459d9d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ebd32cc-65f6-4895-b632-124b43a8c7dd">
+                    <propertyInstance
+                      Id="b5ca09bd-1a43-4ce2-a179-b4ea219cf7d5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8262e9ad-9c7f-4b29-ad51-92522278d33b"
+                  name="mainController"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a1a4db22-d55c-4aa2-b5ed-408caf3fa3be"
+                      LastKnownName="MainController"
+                      LastKnownLocation="Package1_2339.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -362,7 +522,7 @@
             Id="fcf3127f-68ff-433c-aaf7-1edc524ac7c4"
             isDerived="false"
             sourceEndRoleName="inputController"
-            targetEndRoleName="game"
+            targetEndRoleName="mainController"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -386,7 +546,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="1cc7e192-f9ed-4f72-9c7e-2f3714d0d806"
-                  name="game"
+                  name="mainController"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -587,7 +747,7 @@
             Id="3dcb8a9d-0f7f-4e6d-80db-13f2c42ec22c"
             isDerived="false"
             sourceEndRoleName="cartsController"
-            targetEndRoleName="game"
+            targetEndRoleName="mainController"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -611,7 +771,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="d6146c04-be34-4d87-912b-e4eece35537e"
-                  name="game"
+                  name="mainController"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -623,6 +783,86 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="7146314d-f1e2-4fc3-81eb-0719f0d17d2c"
+            name="CartsController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7aed7f73-e244-4d19-b6f3-026a3255a692"
+                name="create"
+                profile="StandardProfileL2" />
+              <stereotypeInstance
+                Id="60dd2b56-c1b7-43fc-b650-05ffeaf1cbc2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06f6cdaa-406f-4140-8581-3345e97effbe">
+                    <propertyInstance
+                      Id="0661ffe4-90be-4bb7-8e24-4f8f78dd4857"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="234f9b83-e347-49cb-a458-e1f117aa8bd6">
+                    <propertyInstance
+                      Id="4a49f3cd-6696-4a95-b310-dbfbfd59969d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0196d5fb-9245-4b51-865a-8040bd4beff3">
+                    <propertyInstance
+                      Id="ad7b0742-7f9d-49b1-8dcc-964f909e6285"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4536a570-fdd6-4397-84d3-4219db3d5ffe">
+                    <propertyInstance
+                      Id="b2723b18-8d27-4bf6-b66f-86136c02d134"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fb98632-983f-4b12-9826-8f05e3e1818f">
+                    <propertyInstance
+                      Id="871ed48c-5334-4c86-b322-61002e8a1d44"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d80c3a0a-db04-4f01-89ab-14b1e18fdb30">
+                    <propertyInstance
+                      Id="fb52db11-f482-470f-8486-25618c375e00"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4a95d2d7-b7bf-4982-926f-5079e5273c50"
+                  name="mainController"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a1a4db22-d55c-4aa2-b5ed-408caf3fa3be"
+                      LastKnownName="MainController"
+                      LastKnownLocation="Package1_2339.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -679,7 +919,7 @@
           <association
             Id="154f37e2-90a8-45f0-b350-426a7cf8a0e0"
             isDerived="false"
-            sourceEndRoleName="game"
+            sourceEndRoleName="mainController"
             targetEndRoleName="view"
             isLeaf="false"
             isAbstract="false">
@@ -691,7 +931,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="25cb546e-72be-4241-bfa3-eae9be332c1d"
-                  name="game"
+                  name="mainController"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -718,7 +958,7 @@
           <association
             Id="f762a3d3-e9be-4520-81cf-159d0d80a961"
             isDerived="false"
-            sourceEndRoleName="Game"
+            sourceEndRoleName="mainController"
             targetEndRoleName="mapController"
             isLeaf="false"
             isAbstract="false">
@@ -730,7 +970,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="5271a9d3-9fe6-4bca-ae54-e31e7c3586d9"
-                  name="Game"
+                  name="mainController"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -757,7 +997,7 @@
           <association
             Id="b7b5ecd5-f6ea-4946-8731-5a23b26ad735"
             isDerived="false"
-            sourceEndRoleName="game"
+            sourceEndRoleName="mainController"
             targetEndRoleName="inputController"
             isLeaf="false"
             isAbstract="false">
@@ -769,7 +1009,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="d6a47c39-70cd-4c79-bac6-a7de02585698"
-                  name="game"
+                  name="mainController"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -796,7 +1036,7 @@
           <association
             Id="183823db-f7b2-4267-b108-f625df3df0f6"
             isDerived="false"
-            sourceEndRoleName="game"
+            sourceEndRoleName="mainController"
             targetEndRoleName="cartsController"
             isLeaf="false"
             isAbstract="false">
@@ -808,7 +1048,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="28eba389-d2de-4f25-99a6-9aed3f1afd99"
-                  name="game"
+                  name="mainController"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -835,7 +1075,7 @@
           <association
             Id="d5081056-2bbe-47cd-a630-17d8d8e983ae"
             isDerived="false"
-            sourceEndRoleName="game"
+            sourceEndRoleName="mainController"
             targetEndRoleName="shipsController"
             isLeaf="false"
             isAbstract="false">
@@ -847,7 +1087,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="9af76ce7-f677-4750-8644-b53e519a3236"
-                  name="game"
+                  name="mainController"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"

@@ -114,11 +114,11 @@
         </appliedStereotypesInternal>
         <elementDefinition Id="a1a4db22-d55c-4aa2-b5ed-408caf3fa3be" />
         <targetEnds>
-          <association Id="c21e482b-86a1-42d9-b19e-80fb11e71cf8" isDerived="false" sourceEndRoleName="game" targetEndRoleName="view" isLeaf="false" isAbstract="false">
+          <association Id="c21e482b-86a1-42d9-b19e-80fb11e71cf8" isDerived="false" sourceEndRoleName="mainController" targetEndRoleName="view" isLeaf="false" isAbstract="false">
             <classMoniker Id="8cc662fd-befa-43f4-906d-a3cb0ce07dcb" LastKnownName="View" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="8553190c-d555-4fb3-8433-fa5facbbb837" name="game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="8553190c-d555-4fb3-8433-fa5facbbb837" name="mainController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="25cb546e-72be-4241-bfa3-eae9be332c1d" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -130,11 +130,11 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="154f37e2-90a8-45f0-b350-426a7cf8a0e0" />
           </association>
-          <association Id="d4d20428-5358-4cdf-bf89-e05bda67713a" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="mapController" isLeaf="false" isAbstract="false">
+          <association Id="d4d20428-5358-4cdf-bf89-e05bda67713a" isDerived="false" sourceEndRoleName="mainController" targetEndRoleName="mapController" isLeaf="false" isAbstract="false">
             <classMoniker Id="f92b221f-4ac8-4f37-ae30-113ab330afb7" LastKnownName="MapController" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="22bc4345-9ceb-462f-9873-5b980142b6b8" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="22bc4345-9ceb-462f-9873-5b980142b6b8" name="mainController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="5271a9d3-9fe6-4bca-ae54-e31e7c3586d9" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -146,11 +146,11 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="f762a3d3-e9be-4520-81cf-159d0d80a961" />
           </association>
-          <association Id="2d79a304-6a87-4321-a517-92840619724b" isDerived="false" sourceEndRoleName="game" targetEndRoleName="inputController" isLeaf="false" isAbstract="false">
+          <association Id="2d79a304-6a87-4321-a517-92840619724b" isDerived="false" sourceEndRoleName="mainController" targetEndRoleName="inputController" isLeaf="false" isAbstract="false">
             <classMoniker Id="f4124dd2-d97e-4e1d-8983-b29346f1cc9e" LastKnownName="InputController" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="8d14786f-072b-4675-ad01-d9577f7993c9" name="game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="8d14786f-072b-4675-ad01-d9577f7993c9" name="mainController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="d6a47c39-70cd-4c79-bac6-a7de02585698" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -162,11 +162,11 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="b7b5ecd5-f6ea-4946-8731-5a23b26ad735" />
           </association>
-          <association Id="378226fe-56c0-417e-8db2-fdfef14fa6de" isDerived="false" sourceEndRoleName="game" targetEndRoleName="cartsController" isLeaf="false" isAbstract="false">
+          <association Id="378226fe-56c0-417e-8db2-fdfef14fa6de" isDerived="false" sourceEndRoleName="mainController" targetEndRoleName="cartsController" isLeaf="false" isAbstract="false">
             <classMoniker Id="32be1484-535b-4bdd-8be9-a76a8580008a" LastKnownName="CartsController" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="3e0e420e-d829-4622-80c9-d0e9f3c7e3d3" name="game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="3e0e420e-d829-4622-80c9-d0e9f3c7e3d3" name="mainController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="28eba389-d2de-4f25-99a6-9aed3f1afd99" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -178,11 +178,11 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="183823db-f7b2-4267-b108-f625df3df0f6" />
           </association>
-          <association Id="a8e2515e-6a95-4360-bf04-4ce839a2e4ea" isDerived="false" sourceEndRoleName="game" targetEndRoleName="shipsController" isLeaf="false" isAbstract="false">
+          <association Id="a8e2515e-6a95-4360-bf04-4ce839a2e4ea" isDerived="false" sourceEndRoleName="mainController" targetEndRoleName="shipsController" isLeaf="false" isAbstract="false">
             <classMoniker Id="0a6fcff5-b16a-47d5-b1d6-da471093d578" LastKnownName="ShipsController" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="4204790f-3d2f-4cd1-bd8e-fcfd87259b3d" name="game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="4204790f-3d2f-4cd1-bd8e-fcfd87259b3d" name="mainController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="9af76ce7-f677-4750-8644-b53e519a3236" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -286,7 +286,7 @@
         </appliedStereotypesInternal>
         <elementDefinition Id="648b9e87-8feb-4f72-9387-ec67f83e3fad" />
         <targetEnds>
-          <association Id="d163b61a-2e79-4ff9-90d9-6246b150d972" isDerived="false" sourceEndRoleName="view" targetEndRoleName="game" isLeaf="false" isAbstract="false">
+          <association Id="d163b61a-2e79-4ff9-90d9-6246b150d972" isDerived="false" sourceEndRoleName="view" targetEndRoleName="mainController" isLeaf="false" isAbstract="false">
             <classMoniker Id="86ecfe1b-091c-40e5-a4e9-b289388b1529" LastKnownName="MainController" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -295,7 +295,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="77901432-7bd1-4cb0-9d0b-664efe401899" name="game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="77901432-7bd1-4cb0-9d0b-664efe401899" name="mainController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="ce952c8d-baba-4963-b456-2b4262c07980" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -303,6 +303,67 @@
             <elementDefinition Id="e053b74f-a682-4401-8584-7babbf5ee7ae" />
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="3313b475-81e9-420a-a237-c0a2a528e937" name="View" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="0a2314eb-4454-4f1d-a90d-bd5304fb2b8d" name="create" profile="StandardProfileL2">
+                <elementDefinition Id="6fdbd441-ab6a-441f-8001-7ffb0feca345" />
+              </stereotypeInstance>
+              <stereotypeInstance Id="a1611c60-9700-4313-a746-ed3e01f614f6" name="method" profile="CSharpProfile">
+                <elementDefinition Id="92be1eb3-27f0-41dd-a61d-27a90a8f9374" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b3cc0eb4-2972-4da4-abc2-d1f6b60c9e37">
+                    <propertyInstance Id="262ec653-047c-419f-8646-bfbae7e51172" name="ClrAttributes">
+                      <elementDefinition Id="a6b66dd4-e581-4f5f-8046-97dfd8bf3f4e" />
+                    </propertyInstance>
+                    <elementDefinition Id="b7a92368-0d98-4c0e-bf80-7b464cf7f399" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ec273b1d-faa1-454d-8af2-359cc0a7c80e">
+                    <propertyInstance Id="39e58aaf-aba2-4dea-b4de-6b0dbb3d1bfb" name="IsPartial" value="false">
+                      <elementDefinition Id="b7010d66-9bd7-4389-b675-b37a22f0a12a" />
+                    </propertyInstance>
+                    <elementDefinition Id="1c9cd08b-86ff-49ad-87e3-aa579d99c392" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6f143d39-6fd6-491c-997a-2d9ec898bd96">
+                    <propertyInstance Id="3956a82f-25b8-4505-b52b-ab0dccbcedd2" name="IsUnsafe" value="false">
+                      <elementDefinition Id="a4bc370b-14fc-4172-9b95-65d9a731d7e6" />
+                    </propertyInstance>
+                    <elementDefinition Id="3987912f-0d76-4884-ab9c-0c37c4bc32e9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3c0876dd-c9d3-46b3-a454-fb5297b26c65">
+                    <propertyInstance Id="fd4b4980-2fbf-49da-a427-67c4edf8f28a" name="Inheritance" value="none">
+                      <elementDefinition Id="f68227db-c751-4a33-be14-a31284c945e2" />
+                    </propertyInstance>
+                    <elementDefinition Id="d993fecf-614e-416d-b2b7-26204729b429" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="09d87149-37d1-4f7b-aa3c-d203de40ab74">
+                    <propertyInstance Id="b1e24472-f79b-4d3e-af24-1fe463db0f51" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="8c56b84f-deb6-40ff-ace1-f4ee8be291d2" />
+                    </propertyInstance>
+                    <elementDefinition Id="f8f2b2d7-9d08-4ffd-bfa4-d719f003f940" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="48462a58-3a37-414a-ad16-3e4cb20d5af8">
+                    <propertyInstance Id="d2c497da-59a6-493b-b018-3559e11894a9" name="params" value="false">
+                      <elementDefinition Id="3b751eb6-0ed9-42a2-946b-30fe30e22cfa" />
+                    </propertyInstance>
+                    <elementDefinition Id="919f20bc-4285-4872-985a-2a143c3908b1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="20ba6005-3a30-4fe4-b07b-d3a9b811200e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="23d4f2cf-bfd7-442d-8bb2-94f83359f378" name="mainController" direction="In">
+                  <elementDefinition Id="c346925b-e853-4870-89f2-1cb6ecbc13e5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d24dbf85-8d89-4272-9e63-db19c04c8bf8" LastKnownName="MainController" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -382,7 +443,7 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="e5cd8c40-b0aa-4c24-9f22-4c53eee3209c" />
           </association>
-          <association Id="138ab6ae-83b7-499d-a762-b4e45a4732dc" isDerived="false" sourceEndRoleName="mapController" targetEndRoleName="Game" isLeaf="false" isAbstract="false">
+          <association Id="138ab6ae-83b7-499d-a762-b4e45a4732dc" isDerived="false" sourceEndRoleName="mapController" targetEndRoleName="mainController" isLeaf="false" isAbstract="false">
             <classMoniker Id="86ecfe1b-091c-40e5-a4e9-b289388b1529" LastKnownName="MainController" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -391,7 +452,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="64975891-b980-4451-a39f-6fd820beb3c3" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="64975891-b980-4451-a39f-6fd820beb3c3" name="mainController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="6116052d-0db9-4405-9494-d5473ca55716" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -399,6 +460,67 @@
             <elementDefinition Id="b4e22fa4-5b79-4124-9029-06e337557944" />
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="052cad5c-80cb-45cf-92df-06160b10413e" name="MapController" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="5db998e3-26d9-43bc-82cb-eb688c49e307" name="create" profile="StandardProfileL2">
+                <elementDefinition Id="dd7b2c7d-112e-4769-bc4f-189a30eb9dd1" />
+              </stereotypeInstance>
+              <stereotypeInstance Id="b1968b0f-c678-4d57-b661-0ce9133c39ca" name="method" profile="CSharpProfile">
+                <elementDefinition Id="6fa8e34d-db46-472f-b981-b4b35d978f50" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="95b8ddca-3850-4428-9475-f201986b0d64">
+                    <propertyInstance Id="2e0eba88-105a-4dd4-9890-ed44f3cdfa7b" name="ClrAttributes">
+                      <elementDefinition Id="6c29b4df-2c68-4e7c-9838-3f1a612b1629" />
+                    </propertyInstance>
+                    <elementDefinition Id="9610526c-876a-4bdc-8c6f-c0fcb597a88e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5d10bead-a2df-45fd-acbd-52daa4c45f0b">
+                    <propertyInstance Id="a0eac42e-3e3b-4d1d-b6d2-f610b18d9699" name="IsPartial" value="false">
+                      <elementDefinition Id="b0a468f0-e870-47d6-8887-cee8a8e527fb" />
+                    </propertyInstance>
+                    <elementDefinition Id="b22fd5de-4fc0-4801-bb6f-f5ce1ee5bb76" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3854656d-9048-4824-95b4-57def2960fd5">
+                    <propertyInstance Id="5c4255a8-70b9-4c6e-81d5-e76199c7b20e" name="IsUnsafe" value="false">
+                      <elementDefinition Id="2f6afb3c-4976-4a36-95fb-c863117e8701" />
+                    </propertyInstance>
+                    <elementDefinition Id="7600d495-09d3-4c9a-98f1-7e29e8c383dc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b4afc289-24b9-400b-afa5-719c8171850c">
+                    <propertyInstance Id="f5377e8f-bc37-43bc-a2f5-a123b83bbf68" name="Inheritance" value="none">
+                      <elementDefinition Id="8fea77b4-80d0-47c2-b9d3-f7c242945a77" />
+                    </propertyInstance>
+                    <elementDefinition Id="d961037f-77e6-43ce-b115-8a7e6feed88e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3c8630e5-c8f8-4c0f-9b12-8cb28eb65fd9">
+                    <propertyInstance Id="2fe71487-5623-4bfc-b3f2-2547bab6a7c7" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="9e338f5f-bb98-4d8d-b943-016cd0459d9d" />
+                    </propertyInstance>
+                    <elementDefinition Id="f53b5f21-806f-44bf-8557-23f94bcecfde" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ab05967a-b107-4584-b822-b2e4873f5b82">
+                    <propertyInstance Id="7bc9b118-719d-4c68-bd8e-9cb5412a3d52" name="params" value="false">
+                      <elementDefinition Id="b5ca09bd-1a43-4ce2-a179-b4ea219cf7d5" />
+                    </propertyInstance>
+                    <elementDefinition Id="7ebd32cc-65f6-4895-b632-124b43a8c7dd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c45e580d-5b98-4062-a5c5-6adf85e4c30a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="16c533a6-d767-45d7-93da-6594a25eda62" name="mainController" direction="In">
+                  <elementDefinition Id="8262e9ad-9c7f-4b29-ad51-92522278d33b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d24dbf85-8d89-4272-9e63-db19c04c8bf8" LastKnownName="MainController" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -468,7 +590,7 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="c60e545b-e0a9-4b8e-b0ba-2dc2d35ac3f3" />
           </association>
-          <association Id="b1507ed7-fe2f-4012-91ae-99aaa0218c60" isDerived="false" sourceEndRoleName="cartsController" targetEndRoleName="game" isLeaf="false" isAbstract="false">
+          <association Id="b1507ed7-fe2f-4012-91ae-99aaa0218c60" isDerived="false" sourceEndRoleName="cartsController" targetEndRoleName="mainController" isLeaf="false" isAbstract="false">
             <classMoniker Id="86ecfe1b-091c-40e5-a4e9-b289388b1529" LastKnownName="MainController" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -477,7 +599,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="2d13c86c-ef2b-4b99-82b5-7077fa16fc5f" name="game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="2d13c86c-ef2b-4b99-82b5-7077fa16fc5f" name="mainController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="d6146c04-be34-4d87-912b-e4eece35537e" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -485,6 +607,67 @@
             <elementDefinition Id="3dcb8a9d-0f7f-4e6d-80db-13f2c42ec22c" />
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="3c15fdcb-8a58-403d-9be2-5594a2f2bda2" name="CartsController" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a79bf10f-ad7c-4bb2-a5ed-09559c2fec5d" name="create" profile="StandardProfileL2">
+                <elementDefinition Id="7aed7f73-e244-4d19-b6f3-026a3255a692" />
+              </stereotypeInstance>
+              <stereotypeInstance Id="870d81a8-f8da-4f24-8c20-7c60c905833d" name="method" profile="CSharpProfile">
+                <elementDefinition Id="60dd2b56-c1b7-43fc-b650-05ffeaf1cbc2" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b8473de4-e1cf-4fd0-9258-3f1a9ef4bf62">
+                    <propertyInstance Id="923ba970-746a-4563-94fc-ec1bac0b824a" name="ClrAttributes">
+                      <elementDefinition Id="0661ffe4-90be-4bb7-8e24-4f8f78dd4857" />
+                    </propertyInstance>
+                    <elementDefinition Id="06f6cdaa-406f-4140-8581-3345e97effbe" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="feed1123-8692-4b28-a933-e8c631688d8b">
+                    <propertyInstance Id="86907d72-e1d0-40e9-828c-825c34b852e3" name="IsPartial" value="false">
+                      <elementDefinition Id="4a49f3cd-6696-4a95-b310-dbfbfd59969d" />
+                    </propertyInstance>
+                    <elementDefinition Id="234f9b83-e347-49cb-a458-e1f117aa8bd6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="110990f8-3999-484f-b143-d7276c386985">
+                    <propertyInstance Id="266ea409-c3c8-4659-b2b6-e399014a902e" name="IsUnsafe" value="false">
+                      <elementDefinition Id="ad7b0742-7f9d-49b1-8dcc-964f909e6285" />
+                    </propertyInstance>
+                    <elementDefinition Id="0196d5fb-9245-4b51-865a-8040bd4beff3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="36518918-5d38-4811-aff2-ce29904c86f0">
+                    <propertyInstance Id="14d60030-79b9-4716-9838-0a96345a3581" name="Inheritance" value="none">
+                      <elementDefinition Id="b2723b18-8d27-4bf6-b66f-86136c02d134" />
+                    </propertyInstance>
+                    <elementDefinition Id="4536a570-fdd6-4397-84d3-4219db3d5ffe" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9106d2e4-1fe6-46e4-9242-543c402a3403">
+                    <propertyInstance Id="1d2fe6ad-169e-4b16-a21f-d2be408b9794" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="871ed48c-5334-4c86-b322-61002e8a1d44" />
+                    </propertyInstance>
+                    <elementDefinition Id="5fb98632-983f-4b12-9826-8f05e3e1818f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3961738f-41a0-4cd3-bedc-af4a2068fba1">
+                    <propertyInstance Id="243b57a7-668e-4e80-80da-6d5686a79f2f" name="params" value="false">
+                      <elementDefinition Id="fb52db11-f482-470f-8486-25618c375e00" />
+                    </propertyInstance>
+                    <elementDefinition Id="d80c3a0a-db04-4f01-89ab-14b1e18fdb30" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="7146314d-f1e2-4fc3-81eb-0719f0d17d2c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="89fcb6d1-4643-4c43-a4d7-c894c47cc8e9" name="mainController" direction="In">
+                  <elementDefinition Id="4a95d2d7-b7bf-4982-926f-5079e5273c50" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d24dbf85-8d89-4272-9e63-db19c04c8bf8" LastKnownName="MainController" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -554,7 +737,7 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="4d37d2d6-0726-4958-ad98-f80a2a0c0ffb" />
           </association>
-          <association Id="b63250cf-ec73-4f94-8601-def66b85885f" isDerived="false" sourceEndRoleName="shipsController" targetEndRoleName="game" isLeaf="false" isAbstract="false">
+          <association Id="b63250cf-ec73-4f94-8601-def66b85885f" isDerived="false" sourceEndRoleName="shipsController" targetEndRoleName="mainController" isLeaf="false" isAbstract="false">
             <classMoniker Id="86ecfe1b-091c-40e5-a4e9-b289388b1529" LastKnownName="MainController" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -563,7 +746,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="d9bfeacb-76cb-45ab-ac40-6fe4c62e5a73" name="game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="d9bfeacb-76cb-45ab-ac40-6fe4c62e5a73" name="mainController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="ee512e7f-4397-48d5-9799-5fa417c77b3a" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -571,6 +754,67 @@
             <elementDefinition Id="f957e760-6195-42ed-b111-6248ce082b56" />
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="3d1a5154-060d-415b-8c45-0853bc6c7bdb" name="ShipsController" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="d188b94e-81f8-4d68-be32-b3e0165df1e3" name="create" profile="StandardProfileL2">
+                <elementDefinition Id="88c1847e-20c2-4f02-84db-92dfdf292849" />
+              </stereotypeInstance>
+              <stereotypeInstance Id="c9cf40e8-be43-4d81-9506-015936ab051e" name="method" profile="CSharpProfile">
+                <elementDefinition Id="e5b7d6a0-3644-4b9c-a4d9-68f78afe17f1" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="06688274-f5d1-41c4-b00f-84f97a6260e4">
+                    <propertyInstance Id="bd7b60ba-4152-458e-a238-a71aae8aa27d" name="ClrAttributes">
+                      <elementDefinition Id="6a1bfc65-9d87-465c-8005-54d2e500b0ec" />
+                    </propertyInstance>
+                    <elementDefinition Id="243636f5-cee4-4660-b36e-fb5822822a8b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9f097300-c8a8-402d-b968-543ada7283f7">
+                    <propertyInstance Id="237414a5-4af0-47a3-9cfc-0b2ce8e4b6c6" name="IsPartial" value="false">
+                      <elementDefinition Id="a9a91be8-eb94-48f5-a3b7-780c96f45728" />
+                    </propertyInstance>
+                    <elementDefinition Id="7161d5b8-cabb-4c62-986e-768869710c54" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8ee4e681-b87b-4305-82e0-f9482f748580">
+                    <propertyInstance Id="9b0a1145-6262-4e3a-a8f4-b114d70b3711" name="IsUnsafe" value="false">
+                      <elementDefinition Id="3e74d145-f982-4e1d-96ae-4b9d284dc35c" />
+                    </propertyInstance>
+                    <elementDefinition Id="f202c85e-5ca4-4ab2-b475-922cbe8594b7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="80dca551-5b28-48a7-8633-248ff9a48eea">
+                    <propertyInstance Id="969fd9ed-e831-4304-8fc0-06dc80a4390d" name="Inheritance" value="none">
+                      <elementDefinition Id="af872c71-1f7f-44fc-9207-8f92b1f4156c" />
+                    </propertyInstance>
+                    <elementDefinition Id="2d6c241e-faa7-4584-9b80-cc6784eb5b4a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cca38715-5931-49d1-9e2f-e239de8a01a0">
+                    <propertyInstance Id="c1a74f59-aaa4-4fed-a534-29a7a608fcc2" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="1531c8cb-c2a5-4e5d-83b6-b76c850e2eb0" />
+                    </propertyInstance>
+                    <elementDefinition Id="1c2568e7-4b51-4a11-a011-e4a83dfb447d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5570467c-5671-4282-8a75-ffe4ffad8b09">
+                    <propertyInstance Id="7343578f-2ae4-4203-8820-3ac2cb15858d" name="params" value="false">
+                      <elementDefinition Id="db325b1d-0d74-4609-b220-808bfb577c76" />
+                    </propertyInstance>
+                    <elementDefinition Id="0a8b955e-8f02-448c-8574-8b0a05eef453" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="a2a54852-8578-48df-b785-5e26901712c2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="41e36cfd-a80d-4604-bf9a-3d556dfe6b63" name="mainController" direction="In">
+                  <elementDefinition Id="f9c97050-04d3-4c46-b2a4-606f6ae3d3ed" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d24dbf85-8d89-4272-9e63-db19c04c8bf8" LastKnownName="MainController" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -614,7 +858,7 @@
         </appliedStereotypesInternal>
         <elementDefinition Id="2e0918e0-4e16-4cc3-a718-805d96f86816" />
         <targetEnds>
-          <association Id="690c0a88-135e-451e-938b-c53cd701ee6d" isDerived="false" sourceEndRoleName="inputController" targetEndRoleName="game" isLeaf="false" isAbstract="false">
+          <association Id="690c0a88-135e-451e-938b-c53cd701ee6d" isDerived="false" sourceEndRoleName="inputController" targetEndRoleName="mainController" isLeaf="false" isAbstract="false">
             <classMoniker Id="86ecfe1b-091c-40e5-a4e9-b289388b1529" LastKnownName="MainController" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -623,7 +867,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="2bed0419-b200-4ea3-a529-44915945e626" name="game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="2bed0419-b200-4ea3-a529-44915945e626" name="mainController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="1cc7e192-f9ed-4f72-9c7e-2f3714d0d806" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -1171,16 +1415,16 @@
         </appliedStereotypesInternal>
         <elementDefinition Id="c752cb73-f059-4240-8c16-5d7c380285cd" />
         <targetEnds>
-          <association Id="bde49829-5a16-437b-b13a-bb59979e3d14" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="MainController" isLeaf="false" isAbstract="false">
+          <association Id="bde49829-5a16-437b-b13a-bb59979e3d14" isDerived="false" sourceEndRoleName="game" targetEndRoleName="mainController" isLeaf="false" isAbstract="false">
             <classMoniker Id="86ecfe1b-091c-40e5-a4e9-b289388b1529" LastKnownName="MainController" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="c378b75b-017a-4bd0-a896-30bbce20b34b" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="c378b75b-017a-4bd0-a896-30bbce20b34b" name="game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="ee99f5fb-67a0-4393-b614-d93d6c2e5aee" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="9ffd36c7-4601-4ff5-9a47-29c0210abb73" name="MainController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="9ffd36c7-4601-4ff5-9a47-29c0210abb73" name="mainController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="747988ac-7b43-42c9-92ad-b0dd42bf915a" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -1189,7 +1433,7 @@
           </association>
         </targetEnds>
         <ownedOperationsInternal>
-          <operation Id="eb40c1bf-610b-4232-a485-04e2af7ac63f" name="Start" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="eb40c1bf-610b-4232-a485-04e2af7ac63f" name="Initialize" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="903f04ca-f5a3-4d93-8ede-48f1da7ebc8d" name="method" profile="CSharpProfile">
                 <elementDefinition Id="6e49e2b4-2d65-459b-9f8b-1a309054712c" />
@@ -1235,7 +1479,7 @@
             </appliedStereotypesInternal>
             <elementDefinition Id="87041c56-59df-4943-bef2-ace43c260b8f" />
           </operation>
-          <operation Id="1e46288b-c5a5-405d-bfd0-10fa6093902c" name="Stop" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="1e46288b-c5a5-405d-bfd0-10fa6093902c" name="Terminate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="53d33db5-2413-4fcc-8db2-9e5e93858ac3" name="method" profile="CSharpProfile">
                 <elementDefinition Id="c2ea19ad-b24f-42b6-9fc0-eb20d5c535ef" />

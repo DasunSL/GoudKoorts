@@ -12,18 +12,18 @@ using System.Text;
 
 public class Game
 {
-	public virtual MainController MainController
+	public virtual MainController mainController
 	{
 		get;
 		set;
 	}
 
-	public virtual void Start()
+	public virtual void Initialize()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void Stop()
+	public virtual void Terminate()
 	{
 		throw new System.NotImplementedException();
 	}

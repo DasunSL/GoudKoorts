@@ -189,8 +189,8 @@
           <association
             Id="8b8ff82b-cfdd-49da-b2ac-540220f827f6"
             isDerived="false"
-            sourceEndRoleName="Game"
-            targetEndRoleName="MainController"
+            sourceEndRoleName="game"
+            targetEndRoleName="mainController"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -201,7 +201,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="ee99f5fb-67a0-4393-b614-d93d6c2e5aee"
-                  name="Game"
+                  name="game"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -214,7 +214,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="747988ac-7b43-42c9-92ad-b0dd42bf915a"
-                  name="MainController"
+                  name="mainController"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -229,7 +229,7 @@
         <ownedOperationsInternal>
           <operation
             Id="87041c56-59df-4943-bef2-ace43c260b8f"
-            name="Start"
+            name="Initialize"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -288,7 +288,7 @@
           </operation>
           <operation
             Id="ee4fc92b-80db-462e-b47b-5ec9c0a47b48"
-            name="Stop"
+            name="Terminate"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -347,6 +347,11 @@
           </operation>
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="efd688ef-85d9-4c43-b3fd-9fbcc7f8e890"
+        name="GoudKoorts::MainController" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

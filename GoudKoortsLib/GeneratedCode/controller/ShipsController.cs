@@ -20,10 +20,14 @@ namespace controller
 			set;
 		}
 
-		public virtual MainController game
+		public virtual MainController mainController
 		{
 			get;
 			set;
+		}
+
+		public ShipsController(MainController mainController)
+		{
 		}
 
 	}
