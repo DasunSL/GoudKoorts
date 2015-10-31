@@ -65,7 +65,7 @@ namespace view
             Console.WriteLine("Press 'q' to quit.");
         }
 
-        public void RenderStartScreen()
+        public void RenderEndScreen()
         {
             // Clear the console.
             Clear();
