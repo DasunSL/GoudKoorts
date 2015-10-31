@@ -31,12 +31,6 @@ namespace controller
             set;
         }
 
-        public InputController inputController
-        {
-            get;
-            set;
-        }
-
         public CartsController cartsController
         {
             get;
@@ -54,10 +48,15 @@ namespace controller
             // Initialize the controllers.
             view = new View(this);
             mapController = new MapController(this);
-            inputController = new InputController(this);
             cartsController = new CartsController(this);
             shipsController = new ShipsController(this);
 
+            // Enter start modus.
+            StartModus();
+        }
+
+        public void StartModus()
+        {
             // Render the start screen.
             view.RenderStartScreen();
 
@@ -83,7 +82,15 @@ namespace controller
             intervalTimer.Enabled = true;
 
             // Loop through input
-            inputController.enterInputLoop();
+            while (true) // Loop indefinitely
+            {
+                ConsoleKeyInfo key = Console.ReadKey(); // Get string from user
+                switch (key.KeyChar)
+                {
+                    case 'q':
+                        return;
+                }
+            }
 
             // Loop has been ended so the user has quitted. End the game.
             intervalTimer = null;

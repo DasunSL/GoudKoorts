@@ -40,7 +40,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GeneratedCode\controller\CartsController.cs" />
-    <Compile Include="GeneratedCode\controller\InputController.cs" />
     <Compile Include="GeneratedCode\controller\MainController.cs" />
     <Compile Include="GeneratedCode\controller\MapController.cs" />
     <Compile Include="GeneratedCode\controller\ShipsController.cs" />
