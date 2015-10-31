@@ -14,7 +14,7 @@ namespace controller
 
 	public class MapController
 	{
-		public virtual IEnumerable<Field> fields
+        public virtual Dictionary<int, Dictionary<int, Field>> fields
 		{
 			get;
 			set;
@@ -28,8 +28,21 @@ namespace controller
 
 		public MapController(MainController mainController)
 		{
+            this.mainController = mainController;
 		}
 
-	}
+        public void GenerateMap()
+        {
+            fields = new Dictionary<int, Dictionary<int, Field>>();
+            
+            // First row only water.
+            Dictionary<int, Field> row = new Dictionary<int, Field>();
+            for (int i = 0; i < 13; i++)
+            {
+                row[i] = new Water();
+            }
+            fields[0] = row; 
+        }
+    }
 }
 

@@ -15,7 +15,7 @@ namespace model
 	{
 		public override char ToChar()
 		{
-			throw new System.NotImplementedException();
+            return '~';
 		}
 
 	}

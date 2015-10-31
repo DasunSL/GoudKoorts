@@ -7,6 +7,7 @@
 namespace view
 {
 	using controller;
+    using model;
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
@@ -14,7 +15,7 @@ namespace view
 
 	public class View
 	{
-		public virtual MainController mainController
+		public MainController mainController
 		{
 			get;
 			set;
@@ -22,7 +23,7 @@ namespace view
 
 		public View(MainController mainController)
 		{
-            this.mainController = new MainController();
+            this.mainController = mainController;
 		}
 
         public void RenderStartScreen()
@@ -32,6 +33,20 @@ namespace view
 
             // Write the start lines.
             Console.WriteLine("Welcome to GoudKoorts! Press any key to start.");
+        }
+
+        public void RenderMap()
+        {
+            // Clear the console.
+            Console.Clear();
+
+            foreach (KeyValuePair<int, Dictionary<int, Field>> row in mainController.mapController.fields)
+            {
+                foreach (KeyValuePair<int, Field> field in row.Value)
+                {
+                    Console.Write(field.Value.ToChar());
+                }
+            }
         }
 	}
 }

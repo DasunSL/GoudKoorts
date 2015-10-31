@@ -19,37 +19,37 @@ namespace controller
 
         private int interval = 5000; // Interval in milliseconds
 
-		public virtual View view
+		public View view
 		{
 			get;
 			set;
 		}
 
-		public virtual MapController mapController
+		public MapController mapController
 		{
 			get;
 			set;
 		}
 
-		public virtual InputController inputController
+		public InputController inputController
 		{
 			get;
 			set;
 		}
 
-		public virtual CartsController cartsController
+		public CartsController cartsController
 		{
 			get;
 			set;
 		}
 
-		public virtual ShipsController shipsController
+		public ShipsController shipsController
 		{
 			get;
 			set;
 		}
 
-        public virtual void Initialize()
+        public void Initialize()
         {
             // Initialize the controllers.
             view = new View(this);
@@ -68,8 +68,14 @@ namespace controller
             Start();
         }
 
-		public virtual void Start()
+		public void Start()
 		{
+            // Generate the map.
+            mapController.GenerateMap();
+
+            // Render the map.
+            view.RenderMap();
+
             // Start the interval timer.
             intervalTimer = new Timer(interval);
             intervalTimer.Elapsed += OnInterval;
@@ -81,9 +87,8 @@ namespace controller
 
         private void OnInterval(Object source, ElapsedEventArgs e)
         {
-            
+            view.RenderMap();
         }
-
 	}
 }
 
