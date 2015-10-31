@@ -26,27 +26,56 @@ namespace view
             this.mainController = mainController;
 		}
 
+        public void Clear()
+        {
+            Console.Clear();
+            Console.WriteLine("!!!!!GoudKoorts!!!!!");
+            Console.WriteLine();
+        }
+
         public void RenderStartScreen()
         {
             // Clear the console.
-            Console.Clear();
+            Clear();
 
             // Write the start lines.
-            Console.WriteLine("Welcome to GoudKoorts! Press any key to start.");
+            Console.WriteLine("Welcome to GoudKoorts!");
+            Console.WriteLine();
+            Console.WriteLine("Press 's' to start.");
+            Console.WriteLine("Press 'q' to quit.");
         }
 
-        public void RenderMap()
+        public void RenderGameScreen()
         {
             // Clear the console.
-            Console.Clear();
+            Clear();
 
+            // Render the map.
             foreach (KeyValuePair<int, Dictionary<int, Field>> row in mainController.mapController.fields)
             {
                 foreach (KeyValuePair<int, Field> field in row.Value)
                 {
                     Console.Write(field.Value.ToChar());
                 }
+                Console.WriteLine();
             }
+
+            Console.WriteLine();
+            Console.WriteLine("Press keys 1 through 5 to control the train track switches.");
+            Console.WriteLine("Press 'q' to quit.");
+        }
+
+        public void RenderStartScreen()
+        {
+            // Clear the console.
+            Clear();
+
+            // Write the score.
+            Console.WriteLine("The End!");
+
+            Console.WriteLine();
+            Console.WriteLine("Press 's' to start again.");
+            Console.WriteLine("Press 'q' to quit.");
         }
 	}
 }

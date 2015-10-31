@@ -13,7 +13,7 @@ namespace controller
 
 	public class InputController
 	{
-		public virtual MainController mainController
+		public MainController mainController
 		{
 			get;
 			set;
@@ -21,8 +21,22 @@ namespace controller
 
 		public InputController(MainController mainController)
 		{
+            this.mainController = mainController;
 		}
 
-	}
+
+        public void enterInputLoop()
+        {
+            while (true) // Loop indefinitely
+            {
+                ConsoleKeyInfo key = Console.ReadKey(); // Get string from user
+                switch (key.KeyChar)
+                {
+                    case 'q':
+                        return;
+                }
+            }
+        }
+    }
 }
 

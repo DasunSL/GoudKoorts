@@ -13,41 +13,41 @@ namespace controller
     using System.Timers;
     using view;
 
-	public class MainController
-	{
+    public class MainController
+    {
         private Timer intervalTimer;
 
         private int interval = 5000; // Interval in milliseconds
 
-		public View view
-		{
-			get;
-			set;
-		}
+        public View view
+        {
+            get;
+            set;
+        }
 
-		public MapController mapController
-		{
-			get;
-			set;
-		}
+        public MapController mapController
+        {
+            get;
+            set;
+        }
 
-		public InputController inputController
-		{
-			get;
-			set;
-		}
+        public InputController inputController
+        {
+            get;
+            set;
+        }
 
-		public CartsController cartsController
-		{
-			get;
-			set;
-		}
+        public CartsController cartsController
+        {
+            get;
+            set;
+        }
 
-		public ShipsController shipsController
-		{
-			get;
-			set;
-		}
+        public ShipsController shipsController
+        {
+            get;
+            set;
+        }
 
         public void Initialize()
         {
@@ -68,13 +68,13 @@ namespace controller
             Start();
         }
 
-		public void Start()
-		{
+        public void Start()
+        {
             // Generate the map.
             mapController.GenerateMap();
 
             // Render the map.
-            view.RenderMap();
+            view.RenderGameScreen();
 
             // Start the interval timer.
             intervalTimer = new Timer(interval);
@@ -82,13 +82,19 @@ namespace controller
             intervalTimer.AutoReset = true;
             intervalTimer.Enabled = true;
 
-            Console.ReadKey();
-		}
+            // Loop through input
+            inputController.enterInputLoop();
+
+            // Loop has been ended so the user has quitted. End the game.
+            intervalTimer = null;
+
+            view.RenderEndScreen();
+        }
 
         private void OnInterval(Object source, ElapsedEventArgs e)
         {
-            view.RenderMap();
+            view.RenderGameScreen();
         }
-	}
+    }
 }
 
