@@ -52,28 +52,44 @@ namespace controller
             shipsController = new ShipsController(this);
 
             // Enter start modus.
-            StartModus();
+            EnterStartModus();
         }
 
-        public void StartModus()
+        public void EnterStartModus()
         {
             // Render the start screen.
             view.RenderStartScreen();
 
-            // Wait for any key to start the game.
-            Console.ReadKey();
-
-            // Start the game.
-            Start();
+            // Wait for 's' key to start the game or the 'q' key to quit.
+            bool quit = false;
+            while (!quit)
+            {
+                ConsoleKeyInfo key = Console.ReadKey(false); // Get string from user
+                switch (key.KeyChar)
+                {
+                    case 's':
+                        // Enter game modus.
+                        EnterGameModus();
+                        // After game modus is done fall back to start modus again.
+                        view.RenderStartScreen();
+                        break;
+                    case 'q':
+                        quit = true;
+                        break;
+                    default:
+                        view.RenderInvalidInputWarning(key.KeyChar);
+                        break;
+                }
+            }
         }
 
-        public void Start()
+        public void EnterGameModus()
         {
             // Generate the map.
             mapController.GenerateMap();
 
             // Render the map.
-            view.RenderGameScreen();
+            view.RenderGameScreen(mapController.map);
 
             // Start the interval timer.
             intervalTimer = new Timer(interval);
@@ -82,17 +98,31 @@ namespace controller
             intervalTimer.Enabled = true;
 
             // Loop through input
-            while (true) // Loop indefinitely
+            bool quit = false;
+            while (!quit)
             {
-                ConsoleKeyInfo key = Console.ReadKey(); // Get string from user
+                ConsoleKeyInfo key = Console.ReadKey(false); // Get string from user
                 switch (key.KeyChar)
                 {
+                    case '1':
+                    case '2':
+                    case '3':
+                    case '4':
+                    case '5':
+                        break;
                     case 'q':
-                        return;
+                        quit = true;
+                        break;
+                    default:
+                        view.RenderInvalidInputWarning(key.KeyChar);
+                        break;
                 }
             }
 
             // Loop has been ended so the user has quitted. End the game.
+            // Kill the timer.
+            intervalTimer.Enabled = false;
+            intervalTimer.Close();
             intervalTimer = null;
 
             view.RenderEndScreen();
@@ -100,7 +130,7 @@ namespace controller
 
         private void OnInterval(Object source, ElapsedEventArgs e)
         {
-            view.RenderGameScreen();
+            view.RenderGameScreen(mapController.map);
         }
     }
 }

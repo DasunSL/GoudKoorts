@@ -353,6 +353,69 @@
         Id="efd688ef-85d9-4c43-b3fd-9fbcc7f8e890"
         name="GoudKoorts::MainController" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="300d5117-c01b-4b5f-9d7c-2fff7b89c5f0"
+        name="Map"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="01618314-7b6e-439a-8459-05ae7f774672"
+            isDerived="false"
+            sourceEndRoleName="map"
+            targetEndRoleName="field"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8ffb0009-9016-4b2a-bb9d-d5a45f4eae3d"
+              LastKnownName="Field"
+              LastKnownLocation="Package_2338.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="83626175-565d-41b3-8645-66cbc6844847"
+                  name="map"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6d125d06-3466-4748-90c1-ccbbe09548b4"
+                  name="field"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cd6f6083-1b55-430a-a406-49a7d3d7b99a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="29310992-6753-4647-be6f-5acde334c4c1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

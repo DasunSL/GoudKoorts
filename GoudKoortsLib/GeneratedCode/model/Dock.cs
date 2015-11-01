@@ -13,11 +13,12 @@ namespace model
 
 	public class Dock : TrainRails
 	{
-		public override char ToChar()
-		{
-			throw new System.NotImplementedException();
-		}
+        public Dock(int x, int y, TrainRails nextTrack, Axis axis) : base(x, y, nextTrack, axis) { }
 
+        public override char ToChar()
+        {
+            return 'D';
+        }
 	}
 }
 

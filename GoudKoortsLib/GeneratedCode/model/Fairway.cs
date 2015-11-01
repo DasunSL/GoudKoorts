@@ -13,16 +13,12 @@ namespace model
 
 	public class Fairway : WaterTrack
 	{
-		public virtual bool HasDock()
-		{
-			throw new System.NotImplementedException();
-		}
+        public Fairway(int x, int y, WaterTrack nextTrack) : base(x, y, nextTrack) { }
 
-		public override char ToChar()
-		{
-			throw new System.NotImplementedException();
-		}
-
+        public override char ToChar()
+        {
+            return '~';
+        }
 	}
 }
 

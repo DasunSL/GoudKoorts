@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoudKoorts", "GoudKoorts\GoudKoorts.csproj", "{648AAFA1-DA38-4472-85D7-CC8938498ECC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3EF81A38-E481-46FB-9E24-E8C460104E20} = {3EF81A38-E481-46FB-9E24-E8C460104E20}
+	EndProjectSection
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Diagrams", "Models\Diagrams.modelproj", "{A69F817C-230B-4A47-A66A-7C1CDE0D23A3}"
 EndProject

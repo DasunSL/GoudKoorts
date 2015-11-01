@@ -11,9 +11,13 @@ namespace model
 	using System.Linq;
 	using System.Text;
 
-	public abstract class LandTrack : Track
+	public class Map
 	{
-        public LandTrack(int x, int y, LandTrack nextTrack) : base(x, y, nextTrack) { }
+        public Dictionary<int, Dictionary<int, Field>> fields { get; set; }
+
+        public int mapSizeX { get; set; }
+
+        public int mapSizeY { get; set; }
 	}
 }
 

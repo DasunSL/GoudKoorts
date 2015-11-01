@@ -13,22 +13,17 @@ namespace model
 
 	public class Warehouse : Field
 	{
-		public virtual string name
-		{
-			get;
-			set;
-		}
+		public char name { get; set; }
 
-		public virtual TrainRails GetTrainRails()
-		{
-			throw new System.NotImplementedException();
-		}
+        public Warehouse(int x, int y, char name) : base(x, y)
+        {
+            this.name = name;
+        }
 
 		public override char ToChar()
 		{
-			throw new System.NotImplementedException();
+            return name;
 		}
-
 	}
 }
 

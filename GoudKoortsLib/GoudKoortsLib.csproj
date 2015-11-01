@@ -47,6 +47,7 @@
     <Compile Include="GeneratedCode\model\Cart.cs" />
     <Compile Include="GeneratedCode\model\Dock.cs" />
     <Compile Include="GeneratedCode\model\Fairway.cs" />
+    <Compile Include="GeneratedCode\model\Map.cs" />
     <Compile Include="GeneratedCode\model\Field.cs" />
     <Compile Include="GeneratedCode\model\LandTrack.cs" />
     <Compile Include="GeneratedCode\model\LandVisitor.cs" />

@@ -13,11 +13,17 @@ namespace model
 
 	public abstract class Field
 	{
-		public virtual char ToChar()
-		{
-			throw new System.NotImplementedException();
-		}
+        public int x { get; set; }
 
+        public int y { get; set; }
+
+        public Field(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
+        public abstract char ToChar();
 	}
 }
 

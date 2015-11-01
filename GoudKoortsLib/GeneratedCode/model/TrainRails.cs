@@ -13,11 +13,27 @@ namespace model
 
 	public class TrainRails : LandTrack
 	{
-		public override char ToChar()
-		{
-			throw new System.NotImplementedException();
-		}
+        public enum Axis
+        {
+            HORIZONTAL,
+            VERTICAL
+        }
 
+        public Axis axis { get; set; }
+
+        public TrainRails(int x, int y, TrainRails nextTrack, Axis axis)
+            : base(x, y, nextTrack)
+        {
+            this.axis = axis;
+        }
+
+        public override char ToChar()
+        {
+            if (axis == Axis.HORIZONTAL)
+                return '-';
+            else
+                return '|';
+        }
 	}
 }
 

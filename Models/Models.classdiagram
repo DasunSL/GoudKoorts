@@ -2150,6 +2150,39 @@
         <elementDefinition Id="5ed88ae6-5de6-435d-b31e-3c7fa4eb0f08" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b3a48300-de94-470b-9b38-b63e7281f387" name="Map" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="300d5117-c01b-4b5f-9d7c-2fff7b89c5f0" />
+        <targetEnds>
+          <association Id="52f1b8ae-0053-483f-bc44-8a9af627a19c" isDerived="false" sourceEndRoleName="map" targetEndRoleName="field" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f97619ec-52b6-4a34-a399-554d70b5f3bb" LastKnownName="Field" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bed4bddc-63a0-4287-9fc2-61f6f863437b" name="map" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="83626175-565d-41b3-8645-66cbc6844847" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="049810c5-412c-4f50-903d-241a77642fdd" name="field" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="55e7d12d-1ed9-4d67-879d-35d7ffc6bad3" name="Lower" value="*">
+                      <elementDefinition Id="cd6f6083-1b55-430a-a406-49a7d3d7b99a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="afbb279c-52ca-4db3-b969-bd034b34a7d5" name="Upper" value="*">
+                      <elementDefinition Id="29310992-6753-4647-be6f-5acde334c4c1" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="6d125d06-3466-4748-90c1-ccbbe09548b4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="01618314-7b6e-439a-8459-05ae7f774672" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="97e88ba1-a45e-4388-a763-683878f74612" name="GoudKoorts">
     <elementDefinition Id="06be2664-4ff7-4842-9d9d-75aedfb21c74" />

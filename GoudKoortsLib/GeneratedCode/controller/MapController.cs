@@ -14,11 +14,11 @@ namespace controller
 
 	public class MapController
 	{
-        public virtual Dictionary<int, Dictionary<int, Field>> fields
-		{
-			get;
-			set;
-		}
+        public Map map
+        {
+            get;
+            set;
+        }
 
 		public virtual MainController mainController
 		{
@@ -33,15 +33,61 @@ namespace controller
 
         public void GenerateMap()
         {
-            fields = new Dictionary<int, Dictionary<int, Field>>();
+            map = new Map();
+            map.mapSizeX = 13;
+            map.mapSizeY = 10;
+            map.fields = new Dictionary<int, Dictionary<int, Field>>();
             
             // First row only water.
+            int y = 0;
             Dictionary<int, Field> row = new Dictionary<int, Field>();
-            for (int i = 0; i < 13; i++)
+            for (int i = 0; i <= 12; i++)
             {
-                row[i] = new Water();
+                row[i] = new Water(i, y);
             }
-            fields[0] = row; 
+            map.fields[y] = row;
+
+
+            // Second row ship track fairway. Track goes from right to left.
+            y = 1;
+            row = new Dictionary<int, Field>();
+            // First fairway (left side) doesn't have a next track.
+            row[0] = new Fairway(0, y, null);
+            for (int i = 1; i <= 12; i++)
+            {
+                row[i] = new Fairway(i, y, (Fairway)row[i - 1]);
+            }
+            map.fields[y] = row;
+
+
+            // 12 train rails going left.
+            y = 2;
+            row = new Dictionary<int, Field>();
+            // First train rail (left side) doesn't have a next track.
+            row[0] = new TrainRails(0, y, null, TrainRails.Axis.HORIZONTAL);
+            for (int i = 1; i <= 11; i++)
+            {
+                // Ninth is the dock.
+                if (i == 9)
+                    row[i] = new Dock(i, y, (TrainRails)row[i - 1], TrainRails.Axis.HORIZONTAL);
+                else
+                    row[i] = new TrainRails(i, y, (TrainRails)row[i - 1], TrainRails.Axis.HORIZONTAL);
+            }
+            map.fields[y] = row;
+
+
+            // Next row is only one track downwards.
+            y = 3;
+            row = new Dictionary<int, Field>();
+            row[11] = new TrainRails(11, y, (TrainRails)map.fields[y - 1][11], TrainRails.Axis.VERTICAL);
+            map.fields[y] = row;
+
+
+            // Next row index 4.
+            y = 4;
+            row = new Dictionary<int, Field>();
+            row[0] = new Warehouse(0, y, 'A');
+            map.fields[y] = row;
         }
     }
 }

@@ -13,11 +13,7 @@ namespace model
 
 	public abstract class WaterTrack : Track
 	{
-		public override char ToChar()
-		{
-			throw new System.NotImplementedException();
-		}
-
+        public WaterTrack(int x, int y, WaterTrack nextTrack) : base(x, y, nextTrack) { }
 	}
 }
 

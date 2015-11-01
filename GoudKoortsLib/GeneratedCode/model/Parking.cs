@@ -13,11 +13,7 @@ namespace model
 
 	public class Parking : TrainRails
 	{
-		public override char ToChar()
-		{
-			throw new System.NotImplementedException();
-		}
-
+        public Parking(int x, int y, TrainRails nextTrack, Axis axis) : base(x, y, nextTrack, axis) { }
 	}
 }
 

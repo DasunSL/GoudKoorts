@@ -13,23 +13,14 @@ namespace model
 
 	public abstract class Track : Field
 	{
-		public virtual Track nextTrack
-		{
-			get;
-			set;
-		}
+        public virtual Track nextTrack { get; set; }
 
-		public virtual Visitor visitor
-		{
-			get;
-			set;
-		}
+        public Visitor visitor { get; set; }
 
-		public override char ToChar()
-		{
-			throw new System.NotImplementedException();
-		}
-
+        public Track(int x, int y, Track nextTrack) : base(x, y)
+        {
+            this.nextTrack = nextTrack;
+        }
 	}
 }
 

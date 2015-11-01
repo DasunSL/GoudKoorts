@@ -13,11 +13,12 @@ namespace model
 
 	public class Water : Field
 	{
+        public Water(int x, int y) : base(x, y) { }
+
 		public override char ToChar()
 		{
             return '~';
 		}
-
 	}
 }
 

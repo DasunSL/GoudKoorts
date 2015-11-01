@@ -15,6 +15,19 @@ namespace view
 
 	public class View
 	{
+        public enum Screen
+        {
+            START,
+            GAME,
+            END
+        }
+
+        public Screen currentScreen
+        {
+            get;
+            set;
+        }
+
 		public MainController mainController
 		{
 			get;
@@ -26,7 +39,7 @@ namespace view
             this.mainController = mainController;
 		}
 
-        public void Clear()
+        private void Clear()
         {
             Console.Clear();
             Console.WriteLine("!!!!!GoudKoorts!!!!!");
@@ -43,18 +56,27 @@ namespace view
             Console.WriteLine();
             Console.WriteLine("Press 's' to start.");
             Console.WriteLine("Press 'q' to quit.");
+
+            currentScreen = Screen.START;
         }
 
-        public void RenderGameScreen()
+        public void RenderGameScreen(Map map)
         {
             // Clear the console.
             Clear();
 
             // Render the map.
-            foreach (KeyValuePair<int, Dictionary<int, Field>> row in mainController.mapController.fields)
+            foreach (KeyValuePair<int, Dictionary<int, Field>> row in map.fields)
             {
+                int previousIndex = -1;
                 foreach (KeyValuePair<int, Field> field in row.Value)
                 {
+                    // Fill empty squares.
+                    for (int i = previousIndex + 1; i < field.Key; i++)
+                        Console.Write(' ');
+
+                    previousIndex = field.Key;
+
                     Console.Write(field.Value.ToChar());
                 }
                 Console.WriteLine();
@@ -63,6 +85,8 @@ namespace view
             Console.WriteLine();
             Console.WriteLine("Press keys 1 through 5 to control the train track switches.");
             Console.WriteLine("Press 'q' to quit.");
+
+            currentScreen = Screen.GAME;
         }
 
         public void RenderEndScreen()
@@ -76,6 +100,13 @@ namespace view
             Console.WriteLine();
             Console.WriteLine("Press 's' to start again.");
             Console.WriteLine("Press 'q' to quit.");
+
+            currentScreen = Screen.END;
+        }
+
+        public void RenderInvalidInputWarning(char key)
+        {
+            Console.Write("\rInvalid key: {0}.", key);
         }
 	}
 }

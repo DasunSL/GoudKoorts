@@ -13,17 +13,58 @@ namespace model
 
 	public class Switch : TrainRails
 	{
-		public virtual bool direction
-		{
-			get;
-			set;
-		}
+        public enum Direction
+        {
+            LEFT,
+            RIGHT
+        }
+
+        public enum ActiveTrack
+        {
+            UP,
+            DOWN
+        }
+
+        public TrainRails nextTrackUp { get; set; }
+
+        public TrainRails nextTrackDown { get; set; }
+
+        public Direction direction { get; set; }
+
+        public ActiveTrack activeTrack { get; set; }
+
+        public Switch(int x, int y, Direction direction, TrainRails nextTrackUp, TrainRails nextTrackDown) : base(x, y, null, Axis.HORIZONTAL)
+        {
+            this.direction = direction;
+            this.nextTrackUp = nextTrackUp;
+            this.nextTrackDown = nextTrackDown;
+        }
 
 		public override char ToChar()
 		{
-			throw new System.NotImplementedException();
+            if (direction == Direction.LEFT)
+                if (activeTrack == ActiveTrack.UP)
+                    return '\\';
+                else
+                    return '/';
+            else
+                if (activeTrack == ActiveTrack.UP)
+                    return '/';
+                else
+                    return '\\';
 		}
 
+        public override Track nextTrack
+        {
+            get
+            {
+                if (activeTrack == ActiveTrack.UP)
+                    return nextTrackUp;
+                else
+                    return nextTrackDown;
+            }
+            set { }
+        }
 	}
 }
 
