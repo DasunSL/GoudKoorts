@@ -14,6 +14,11 @@ namespace model
 	public class Parking : TrainRails
 	{
         public Parking(int x, int y, TrainRails nextTrack, Axis axis) : base(x, y, nextTrack, axis) { }
+
+        public override char ToChar()
+        {
+            return '=';
+        }
 	}
 }
 

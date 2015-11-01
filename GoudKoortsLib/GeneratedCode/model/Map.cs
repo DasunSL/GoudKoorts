@@ -13,7 +13,7 @@ namespace model
 
 	public class Map
 	{
-        public Dictionary<int, Dictionary<int, Field>> fields { get; set; }
+        public SortedDictionary<int, SortedDictionary<int, Field>> fields { get; set; }
 
         public int mapSizeX { get; set; }
 

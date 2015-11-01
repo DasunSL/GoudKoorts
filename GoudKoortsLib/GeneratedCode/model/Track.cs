@@ -13,6 +13,12 @@ namespace model
 
 	public abstract class Track : Field
 	{
+        public enum VisitAllowed
+        {
+            ALLOWED,
+            ALREADY_HAVE_VISITOR,
+        }
+
         public virtual Track nextTrack { get; set; }
 
         public Visitor visitor { get; set; }
@@ -20,6 +26,14 @@ namespace model
         public Track(int x, int y, Track nextTrack) : base(x, y)
         {
             this.nextTrack = nextTrack;
+        }
+
+        public virtual VisitAllowed AllowVisit()
+        {
+            if (visitor != null)
+                return VisitAllowed.ALLOWED;
+            else
+                return VisitAllowed.ALREADY_HAVE_VISITOR;
         }
 	}
 }

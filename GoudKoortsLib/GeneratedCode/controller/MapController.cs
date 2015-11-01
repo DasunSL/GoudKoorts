@@ -36,58 +36,148 @@ namespace controller
             map = new Map();
             map.mapSizeX = 13;
             map.mapSizeY = 10;
-            map.fields = new Dictionary<int, Dictionary<int, Field>>();
+            map.fields = new SortedDictionary<int, SortedDictionary<int, Field>>();
             
             // First row only water.
             int y = 0;
-            Dictionary<int, Field> row = new Dictionary<int, Field>();
-            for (int i = 0; i <= 12; i++)
+            SortedDictionary<int, Field> row = new SortedDictionary<int, Field>();
+            for (int x = 0; x <= 12; x++)
             {
-                row[i] = new Water(i, y);
+                row[x] = new Water(x, y);
             }
             map.fields[y] = row;
 
 
             // Second row ship track fairway. Track goes from right to left.
             y = 1;
-            row = new Dictionary<int, Field>();
+            row = new SortedDictionary<int, Field>();
             // First fairway (left side) doesn't have a next track.
             row[0] = new Fairway(0, y, null);
-            for (int i = 1; i <= 12; i++)
+            for (int x = 1; x <= 12; x++)
             {
-                row[i] = new Fairway(i, y, (Fairway)row[i - 1]);
+                row[x] = new Fairway(x, y, (Fairway)row[x - 1]);
             }
             map.fields[y] = row;
 
 
             // 12 train rails going left.
             y = 2;
-            row = new Dictionary<int, Field>();
+            row = new SortedDictionary<int, Field>();
             // First train rail (left side) doesn't have a next track.
             row[0] = new TrainRails(0, y, null, TrainRails.Axis.HORIZONTAL);
-            for (int i = 1; i <= 11; i++)
+            for (int x = 1; x <= 11; x++)
             {
                 // Ninth is the dock.
-                if (i == 9)
-                    row[i] = new Dock(i, y, (TrainRails)row[i - 1], TrainRails.Axis.HORIZONTAL);
+                if (x == 9)
+                    row[x] = new Dock(x, y, (TrainRails)row[x - 1], TrainRails.Axis.HORIZONTAL);
                 else
-                    row[i] = new TrainRails(i, y, (TrainRails)row[i - 1], TrainRails.Axis.HORIZONTAL);
+                    row[x] = new TrainRails(x, y, (TrainRails)row[x - 1], TrainRails.Axis.HORIZONTAL);
             }
             map.fields[y] = row;
 
 
             // Next row is only one track downwards.
             y = 3;
-            row = new Dictionary<int, Field>();
+            row = new SortedDictionary<int, Field>();
             row[11] = new TrainRails(11, y, (TrainRails)map.fields[y - 1][11], TrainRails.Axis.VERTICAL);
             map.fields[y] = row;
 
 
-            // Next row index 4.
-            y = 4;
-            row = new Dictionary<int, Field>();
-            row[0] = new Warehouse(0, y, 'A');
-            map.fields[y] = row;
+            // Rows 4, 5, 6, 7 and 8 are a bit weird because of switches. Going to have to work a bit different now...
+            for (y = 4; y <= 9; y++)
+                map.fields[y] = new SortedDictionary<int, Field>();
+
+            map.fields[4][11] = new TrainRails(11, 4, (TrainRails)map.fields[3][11], TrainRails.Axis.VERTICAL);
+            map.fields[5][11] = new TrainRails(11, 5, (TrainRails)map.fields[4][11], TrainRails.Axis.HORIZONTAL);
+            map.fields[5][10] = new TrainRails(10, 5, (TrainRails)map.fields[5][11], TrainRails.Axis.HORIZONTAL);
+            TrainRails upperRails = new TrainRails(9, 4, null, TrainRails.Axis.HORIZONTAL);
+            TrainRails lowerRails = new TrainRails(9, 6, null, TrainRails.Axis.HORIZONTAL);
+            Switch trainSwitch = new Switch(9, 5, (TrainRails)map.fields[5][10], Switch.Direction.LEFT, upperRails, lowerRails);
+
+            upperRails.nextTrack = trainSwitch;
+            lowerRails.nextTrack = trainSwitch;
+            map.fields[4][9] = upperRails;
+            map.fields[6][9] = lowerRails;
+            map.fields[5][9] = trainSwitch;
+
+            map.fields[4][8] = new TrainRails(8, 4, (TrainRails)map.fields[4][9], TrainRails.Axis.HORIZONTAL);
+            map.fields[4][7] = new TrainRails(7, 4, (TrainRails)map.fields[4][8], TrainRails.Axis.HORIZONTAL);
+            map.fields[4][6] = new TrainRails(6, 4, (TrainRails)map.fields[4][7], TrainRails.Axis.HORIZONTAL);
+
+            upperRails = new TrainRails(5, 4, (TrainRails)map.fields[4][6], TrainRails.Axis.HORIZONTAL);
+            lowerRails = new TrainRails(5, 6, null, TrainRails.Axis.HORIZONTAL);
+            trainSwitch = new Switch(5, 5, null, Switch.Direction.RIGHT, upperRails, lowerRails);
+
+            map.fields[4][5] = upperRails;
+            map.fields[6][5] = lowerRails;
+            map.fields[5][5] = trainSwitch;
+
+            map.fields[5][4] = new TrainRails(4, 5, trainSwitch, TrainRails.Axis.HORIZONTAL);
+
+            upperRails = new TrainRails(3, 4, null, TrainRails.Axis.HORIZONTAL);
+            lowerRails = new TrainRails(3, 6, null, TrainRails.Axis.HORIZONTAL);
+            trainSwitch = new Switch(3, 5, (TrainRails)map.fields[5][4], Switch.Direction.LEFT, upperRails, lowerRails);
+            upperRails.nextTrack = trainSwitch;
+            lowerRails.nextTrack = trainSwitch;
+            map.fields[4][3] = upperRails;
+            map.fields[6][3] = lowerRails;
+            map.fields[5][3] = trainSwitch;
+
+            map.fields[4][2] = new TrainRails(2, 4, upperRails, TrainRails.Axis.HORIZONTAL);
+            map.fields[4][1] = new TrainRails(1, 4, (TrainRails)map.fields[4][2], TrainRails.Axis.HORIZONTAL);
+            map.fields[4][0] = new Warehouse(0, 4, 'A');
+
+            map.fields[6][2] = new TrainRails(2, 6, lowerRails, TrainRails.Axis.HORIZONTAL);
+            map.fields[6][1] = new TrainRails(1, 6, (TrainRails)map.fields[4][2], TrainRails.Axis.HORIZONTAL);
+            map.fields[6][0] = new Warehouse(0, 6, 'B');
+
+            upperRails = new TrainRails(8, 6, (TrainRails)map.fields[6][9], TrainRails.Axis.HORIZONTAL);
+            lowerRails = new TrainRails(8, 8, null, TrainRails.Axis.HORIZONTAL);
+            trainSwitch = new Switch(8, 7, null, Switch.Direction.RIGHT, upperRails, lowerRails);
+            map.fields[6][8] = upperRails;
+            map.fields[8][8] = lowerRails;
+            map.fields[7][8] = trainSwitch;
+
+            map.fields[7][7] = new TrainRails(7, 7, trainSwitch, TrainRails.Axis.HORIZONTAL);
+
+            upperRails = new TrainRails(6, 6, null, TrainRails.Axis.HORIZONTAL);
+            lowerRails = new TrainRails(6, 8, null, TrainRails.Axis.HORIZONTAL);
+            trainSwitch = new Switch(6, 7, (TrainRails)map.fields[7][7], Switch.Direction.LEFT, upperRails, lowerRails);
+            upperRails.nextTrack = trainSwitch;
+            lowerRails.nextTrack = trainSwitch;
+            map.fields[6][6] = upperRails;
+            map.fields[8][6] = lowerRails;
+            map.fields[7][6] = trainSwitch;
+
+            TrainRails rails = (TrainRails)map.fields[6][5];
+            rails.nextTrack = upperRails;
+
+            map.fields[8][5] = new TrainRails(5, 8, lowerRails, TrainRails.Axis.HORIZONTAL);
+            map.fields[8][4] = new TrainRails(4, 8, (TrainRails)map.fields[8][5], TrainRails.Axis.HORIZONTAL);
+            map.fields[8][3] = new TrainRails(3, 8, (TrainRails)map.fields[8][4], TrainRails.Axis.HORIZONTAL);
+            map.fields[8][2] = new TrainRails(2, 8, (TrainRails)map.fields[8][3], TrainRails.Axis.HORIZONTAL);
+            map.fields[8][1] = new TrainRails(1, 8, (TrainRails)map.fields[8][2], TrainRails.Axis.HORIZONTAL);
+            map.fields[8][0] = new Warehouse(0, 8, 'C');
+
+            // Parking
+            map.fields[9][1] = new Parking(1, 9, null, TrainRails.Axis.HORIZONTAL);
+            map.fields[9][2] = new Parking(2, 9, (TrainRails)map.fields[9][1], TrainRails.Axis.HORIZONTAL);
+            map.fields[9][3] = new Parking(3, 9, (TrainRails)map.fields[9][2], TrainRails.Axis.HORIZONTAL);
+            map.fields[9][4] = new Parking(4, 9, (TrainRails)map.fields[9][3], TrainRails.Axis.HORIZONTAL);
+            map.fields[9][5] = new Parking(5, 9, (TrainRails)map.fields[9][4], TrainRails.Axis.HORIZONTAL);
+            map.fields[9][6] = new Parking(6, 9, (TrainRails)map.fields[9][5], TrainRails.Axis.HORIZONTAL);
+            map.fields[9][7] = new Parking(7, 9, (TrainRails)map.fields[9][6], TrainRails.Axis.HORIZONTAL);
+            map.fields[9][8] = new Parking(8, 9, (TrainRails)map.fields[9][7], TrainRails.Axis.HORIZONTAL);
+
+            map.fields[9][9] = new TrainRails(9, 9, (TrainRails)map.fields[9][8], TrainRails.Axis.HORIZONTAL);
+            map.fields[9][10] = new TrainRails(10, 9, (TrainRails)map.fields[9][9], TrainRails.Axis.HORIZONTAL);
+            map.fields[9][11] = new TrainRails(11, 9, (TrainRails)map.fields[9][10], TrainRails.Axis.VERTICAL);
+            map.fields[8][11] = new TrainRails(11, 8, (TrainRails)map.fields[9][11], TrainRails.Axis.VERTICAL);
+            map.fields[8][10] = new TrainRails(10, 8, (TrainRails)map.fields[8][11], TrainRails.Axis.HORIZONTAL);
+            map.fields[8][9] = new TrainRails(9, 8, (TrainRails)map.fields[8][10], TrainRails.Axis.HORIZONTAL);
+
+            rails = (TrainRails)map.fields[8][8];
+            rails.nextTrack = (TrainRails)map.fields[8][9];
         }
     }
 }

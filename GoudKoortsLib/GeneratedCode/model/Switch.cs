@@ -25,19 +25,19 @@ namespace model
             DOWN
         }
 
-        public TrainRails nextTrackUp { get; set; }
+        public TrainRails trackUp { get; set; }
 
-        public TrainRails nextTrackDown { get; set; }
+        public TrainRails trackDown { get; set; }
 
         public Direction direction { get; set; }
 
         public ActiveTrack activeTrack { get; set; }
 
-        public Switch(int x, int y, Direction direction, TrainRails nextTrackUp, TrainRails nextTrackDown) : base(x, y, null, Axis.HORIZONTAL)
+        public Switch(int x, int y, TrainRails nextTrack, Direction direction, TrainRails trackUp, TrainRails trackDown) : base(x, y, nextTrack, Axis.HORIZONTAL)
         {
             this.direction = direction;
-            this.nextTrackUp = nextTrackUp;
-            this.nextTrackDown = nextTrackDown;
+            this.trackUp = trackUp;
+            this.trackDown = trackDown;
         }
 
 		public override char ToChar()
@@ -58,12 +58,22 @@ namespace model
         {
             get
             {
+                if (nextTrack != null)
+                    return nextTrack;
                 if (activeTrack == ActiveTrack.UP)
-                    return nextTrackUp;
+                    return trackUp;
                 else
-                    return nextTrackDown;
+                    return trackDown;
             }
             set { }
+        }
+
+        public void Shift()
+        {
+            if (activeTrack == ActiveTrack.UP)
+                activeTrack = ActiveTrack.DOWN;
+            else
+                activeTrack = ActiveTrack.UP;
         }
 	}
 }

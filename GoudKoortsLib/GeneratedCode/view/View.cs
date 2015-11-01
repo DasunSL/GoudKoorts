@@ -66,19 +66,18 @@ namespace view
             Clear();
 
             // Render the map.
-            foreach (KeyValuePair<int, Dictionary<int, Field>> row in map.fields)
+            foreach (KeyValuePair<int, SortedDictionary<int, Field>> row in map.fields)
             {
                 int previousIndex = -1;
                 foreach (KeyValuePair<int, Field> field in row.Value)
                 {
                     // Fill empty squares.
-                    for (int i = previousIndex + 1; i < field.Key; i++)
+                    while (++previousIndex != field.Key)
                         Console.Write(' ');
-
-                    previousIndex = field.Key;
 
                     Console.Write(field.Value.ToChar());
                 }
+
                 Console.WriteLine();
             }
 
